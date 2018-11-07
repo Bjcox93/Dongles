@@ -1,0 +1,38 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenu1 : MonoBehaviour {
+
+    
+
+    public GameObject MainMenuUI;
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	
+
+    public void StartNew()
+    {
+        SceneManager.LoadScene("LEVEL_1");
+    }
+
+   
+
+    public void OptionsMenu()
+    {
+        SceneManager.LoadScene("Title_Menu_Options");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("QUIT");
+        Application.Quit();
+        
+    }
+}
