@@ -4,11 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour {
+    public AudioClip EndBoop1;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public string nextLevel = "LEVEL_2";
+
+    // Use this for initialization
+    void Start () {
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = EndBoop1;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,7 +24,10 @@ public class SceneTransition : MonoBehaviour {
     {
         if (other.CompareTag("Tank"))
         {
-            SceneManager.LoadScene("LEVEL_2");
+            GetComponent<AudioSource>().Play();
+            GameManager.instance.currentLevel = SceneManager.GetSceneByName(nextLevel).buildIndex;
+            GameManager.instance.SaveGame();
+            SceneManager.LoadScene(nextLevel);
         }
     }
     }
