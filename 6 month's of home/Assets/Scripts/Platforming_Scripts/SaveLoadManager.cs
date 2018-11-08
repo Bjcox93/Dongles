@@ -8,7 +8,7 @@ public static class SaveLoadManager{
 
 	public static string filename = Application.persistentDataPath + "/test.sav";
 
-	public static void SavePlayer()
+	public static void SaveFile()
 	{
 		using (FileStream stream = new FileStream(filename, FileMode.Create))
 		{
@@ -22,7 +22,7 @@ public static class SaveLoadManager{
 		}
 	}
 
-	public static int LoadPlayer()
+	public static string LoadFile()
 	{
 		if (File.Exists(filename))
 		{
@@ -38,7 +38,7 @@ public static class SaveLoadManager{
 		else
 		{
 			Debug.LogError("Couldn't find file");
-			return 0;
+			return "";
 		}
 	}
 }
@@ -46,10 +46,10 @@ public static class SaveLoadManager{
 [Serializable]
 public class GameData
 {
-	public int currentLevel;
+	public string currentLevel;
 
-	public GameData(int currentLvL)
+	public GameData(string levelName)
 	{
-		currentLevel = currentLvL;
+		currentLevel = levelName;
 	}
 }

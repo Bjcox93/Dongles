@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager instance;
 
-	public int currentLevel;
+	public string currentLevel;
 
 	private void Awake()
 	{
@@ -25,12 +25,16 @@ public class GameManager : MonoBehaviour {
 
 	public void LoadGame()
 	{
-		currentLevel = SaveLoadManager.LoadPlayer();
+		currentLevel = SaveLoadManager.LoadFile();
+		if(currentLevel != ""){
+			SceneManager.LoadScene (currentLevel);
+		}
+
 	}
 
 	public void SaveGame()
 	{
-		SaveLoadManager.SavePlayer();
+		SaveLoadManager.SaveFile();
 	}
 
 	private void OnApplicationQuit()
