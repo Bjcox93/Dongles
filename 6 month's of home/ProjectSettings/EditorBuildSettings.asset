@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/ACT 1 - Harbour/Title_Menu_Options.unity
     guid: aff4e12d0bb798446aa3d320dce98e31
   - enabled: 1
+    path: Assets/Scenes/Story/ACT 1 - Harbour/Title_Menu_LOAD_LEVEL.unity
+    guid: 7134fef8a8ecbe64a8661b32b237a636
+  - enabled: 1
     path: Assets/Scenes/Story/ACT 1 - Harbour/Title_Menu.unity
     guid: 40399599cc009db448bd73a789b6e53c
   - enabled: 1

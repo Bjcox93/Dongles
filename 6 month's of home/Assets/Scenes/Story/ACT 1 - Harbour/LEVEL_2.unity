@@ -615,12 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a28b7eb779a71642bc4592529995070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target1: {fileID: 2123233232}
-  Target2: {fileID: 0}
-  OriginalTarget: {fileID: 0}
-  there: 0
-  back: 0
-  SpeedOfMove: 1
 --- !u!1 &96493266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,12 +6484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a28b7eb779a71642bc4592529995070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target1: {fileID: 1852000632}
-  Target2: {fileID: 1396983607}
-  OriginalTarget: {fileID: 1396983607}
-  there: 0
-  back: 0
-  SpeedOfMove: 5
 --- !u!1 &747807550
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,6 +10101,7 @@ GameObject:
   - component: {fileID: 1173713594}
   - component: {fileID: 1173713593}
   - component: {fileID: 1173713592}
+  - component: {fileID: 1173713596}
   m_Layer: 0
   m_Name: Bring_pick_up here
   m_TagString: Pick_Up_Drop_Zone
@@ -10145,6 +10134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f653d32017d97c4c83e0af131ea1062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndBoop1: {fileID: 8300000, guid: 8d97c992176f9284bae810429c00920a, type: 3}
+  nextLevel: LEVEL_3
 --- !u!136 &1173713593
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10203,6 +10194,102 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173713590}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1173713596
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173713590}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8d97c992176f9284bae810429c00920a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1187460313
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,12 +10691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a28b7eb779a71642bc4592529995070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target1: {fileID: 0}
-  Target2: {fileID: 740423742}
-  OriginalTarget: {fileID: 740423742}
-  there: 0
-  back: 0
-  SpeedOfMove: 0.5
 --- !u!1 &1250058432
 GameObject:
   m_ObjectHideFlags: 0
@@ -11389,7 +11470,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331518812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c09afaddfb0bdeb4fb2de0ef543352de, type: 3}
   m_Name: 

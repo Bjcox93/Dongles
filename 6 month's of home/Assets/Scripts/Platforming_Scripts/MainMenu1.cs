@@ -29,10 +29,17 @@ public class MainMenu1 : MonoBehaviour {
         SceneManager.LoadScene("Title_Menu_Options");
     }
 
+    public void LoadLevelLoadMenu()
+    {
+        SceneManager.LoadScene("Title_Menu_LOAD_LEVEL");
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT");
         Application.Quit();
         
     }
+
+ 
 }

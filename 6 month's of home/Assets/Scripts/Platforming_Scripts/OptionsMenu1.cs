@@ -35,4 +35,29 @@ public class OptionsMenu1 : MonoBehaviour {
         Application.Quit();
         
     }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("LEVEL_1");
+    }
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("LEVEL_2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("LEVEL_3");
+    }
+
+    public void Level4()
+    {
+        SceneManager.LoadScene("LEVEL_4");
+    }
+
+    public void Level5()
+    {
+        SceneManager.LoadScene("LEVEL_5");
+    }
 }

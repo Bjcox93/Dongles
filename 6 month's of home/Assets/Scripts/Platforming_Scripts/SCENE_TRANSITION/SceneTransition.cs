@@ -25,10 +25,12 @@ public class SceneTransition : MonoBehaviour {
         if (other.CompareTag("Tank"))
         {
             GetComponent<AudioSource>().Play();
-			Debug.LogError (SceneManager.GetSceneByName (nextLevel).buildIndex);
+            SceneManager.LoadScene("LEVEL_2");
+            Debug.LogError (SceneManager.GetSceneByName (nextLevel).buildIndex);
 			GameManager.instance.currentLevel = nextLevel;
             GameManager.instance.SaveGame();
             SceneManager.LoadScene(nextLevel);
+            
         }
     }
     }

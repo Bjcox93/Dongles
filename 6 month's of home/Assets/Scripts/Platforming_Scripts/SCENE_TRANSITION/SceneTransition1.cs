@@ -5,22 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition1 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioClip EndBoop1;
+
+    public string nextLevel = "LEVEL_3";
+
+    // Use this for initialization
+    void Start()
+    {
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = EndBoop1;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Tank"))
         {
+            GetComponent<AudioSource>().Play();
             SceneManager.LoadScene("LEVEL_3");
+            Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+            GameManager.instance.currentLevel = nextLevel;
+            GameManager.instance.SaveGame();
+            SceneManager.LoadScene(nextLevel);
+
         }
     }
-    }
+}
