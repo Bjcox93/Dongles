@@ -201,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219162701}
   - component: {fileID: 219162702}
+  - component: {fileID: 219162703}
   m_Layer: 5
   m_Name: MUSIC_Slider
   m_TagString: Untagged
@@ -273,12 +274,12 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: set_volume
+      - m_Target: {fileID: 11500000, guid: 6830008e8d6e2174ca406f300531df17, type: 3}
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -290,6 +291,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &219162703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219162700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6830008e8d6e2174ca406f300531df17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 219162702}
 --- !u!1 &301375592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,8 +1349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 87.1}
-  m_SizeDelta: {x: -640, y: -346.73666}
+  m_AnchoredPosition: {x: -0, y: 101.77}
+  m_SizeDelta: {x: -640, y: -376.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661912245
 MonoBehaviour:
@@ -1535,6 +1548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1844561799}
   - component: {fileID: 1844561800}
+  - component: {fileID: 1844561801}
   m_Layer: 5
   m_Name: SFX_Slider
   m_TagString: Untagged
@@ -1607,7 +1621,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1624,6 +1638,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1844561801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844561798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54afa682f8cfda4a9ae91536e842b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSlider: {fileID: 1844561800}
 --- !u!1 &1973843705
 GameObject:
   m_ObjectHideFlags: 0

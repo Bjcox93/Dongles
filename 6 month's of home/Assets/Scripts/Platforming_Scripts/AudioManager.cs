@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour {
 
     public AudioMixer audioMixer;
+    public static float musicVolume = 0.5f;
 
     public void MusicSetVolume (float volume)
     {
@@ -25,13 +26,14 @@ public class AudioManager : MonoBehaviour {
         m_MyAudioSource = GetComponent<AudioSource>();
         //Play the AudioClip attached to the AudioSource on startup
         m_MyAudioSource.Play();
+       
 
     }
 
     void Update()
     {
         //Makes the volume of the Audio match the Slider value
-        //m_MyAudioSource.volume = m_MySlider;
+        m_MyAudioSource.volume = musicVolume;
     }
 
 }

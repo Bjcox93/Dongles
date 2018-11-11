@@ -34,6 +34,11 @@ public class MainMenu1 : MonoBehaviour {
         SceneManager.LoadScene("Title_Menu_LOAD_LEVEL");
     }
 
+    public void LoadControlsMenu()
+    {
+        SceneManager.LoadScene("Title_Menu_Controls");
+    }
+
     public void QuitGame()
     {
         Debug.Log("QUIT");
