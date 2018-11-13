@@ -8,7 +8,7 @@ public class SpeedOfObject : MonoBehaviour {
 
     public float timeP = 2.0f;
     public float timeO = 2.0f;
-    public float timeF = 2.0f;
+    public float timeF = 3.0f;
 
     // Use this for initialization
     void Start () {
@@ -43,7 +43,7 @@ public class SpeedOfObject : MonoBehaviour {
                 Debug.Log("Normal");
             }
 
-             if (vel > 30)
+             if (vel > 32)
             {
 
                 timeF -= Time.deltaTime;
@@ -51,7 +51,7 @@ public class SpeedOfObject : MonoBehaviour {
                 {
                     Debug.Log("Hot");
                     Reset.instance.ResetFun();
-                    timeF = 2.0f;
+                    timeF = 3.0f;
                 }
             }
         }
