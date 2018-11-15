@@ -43,7 +43,7 @@ public class SpeedOfObject : MonoBehaviour {
                 Debug.Log("Normal");
             }
 
-             if (vel > 32)
+             if (vel > 35)
             {
 
                 timeF -= Time.deltaTime;
