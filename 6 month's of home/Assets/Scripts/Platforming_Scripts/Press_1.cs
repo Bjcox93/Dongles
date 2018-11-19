@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class Press_1 : MonoBehaviour {
 
-    public Text press_b;
-    public Text press_space;
+    public GameObject press_b;
+    public GameObject press_space;
 
     
 
@@ -19,19 +19,13 @@ public class Press_1 : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            press_b.text = "";
-            Debug.Log("B");
-
-            press_space.text = "PRESS SPACE TO RESET";
-            Debug.Log("Space");
+            press_b.SetActive(false);
+            press_space.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            press_space.text = "";
-            Debug.Log("Space");
-            
-           
+            press_space.SetActive(false);
         }
     }
 }

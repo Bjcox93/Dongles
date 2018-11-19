@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition : MonoBehaviour {
+public class SceneTransition15 : MonoBehaviour {
     public AudioClip EndBoop1;
 
     public string nextLevel = "LEVEL_2";
@@ -25,7 +25,7 @@ public class SceneTransition : MonoBehaviour {
         if (other.CompareTag("Tank"))
         {
             GetComponent<AudioSource>().Play();
-            SceneManager.LoadScene("LEVEL_3");
+            SceneManager.LoadScene("LEVEL_1");
             Debug.LogError (SceneManager.GetSceneByName (nextLevel).buildIndex);
 			GameManager.instance.currentLevel = nextLevel;
             GameManager.instance.SaveGame();

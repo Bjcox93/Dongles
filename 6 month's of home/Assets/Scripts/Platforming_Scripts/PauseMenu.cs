@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject pauseMenuUI;
 
+    public GameObject TutorialObject;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -27,6 +29,11 @@ public class PauseMenu : MonoBehaviour {
             {
                 Pause();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TutorialObject.SetActive(false);
         }
 	}
 
