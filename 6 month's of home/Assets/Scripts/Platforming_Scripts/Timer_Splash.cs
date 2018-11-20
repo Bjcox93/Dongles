@@ -8,7 +8,8 @@ public class Timer_Splash : MonoBehaviour {
     public float timek = 2.0f;
     // Use this for initialization
     void Start () {
-		
+        Reset.instance.scoreAmount = 0;
+        Reset.instance.ScoreCanvas.SetActive(false);
 	}
 	
 	// Update is called once per frame

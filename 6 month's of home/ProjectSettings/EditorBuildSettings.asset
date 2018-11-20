@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/ACT 1 - Harbour/LEVEL_2.unity
     guid: 347b436a1a7da4845bfc931c6fdf828e
   - enabled: 1
+    path: Assets/Scenes/Story/ACT 1 - Harbour/LEVEL_8.unity
+    guid: c05496535e0774c47a76c74c4e5a2ac3
+  - enabled: 1
     path: Assets/Scenes/Story/ACT 1 - Harbour/LEVEL_3.unity
     guid: 6e26a19c3c416e749aa1a73db2cb2c23
   - enabled: 1

@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1313121956}
+  TutorialObject: {fileID: 0}
 --- !u!114 &1162882159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +779,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.05
+      value: -39.5
       objectReference: {fileID: 0}
     - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -808,7 +809,19 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 73f56a28f2b3c234bbe038828076c73b, type: 2}
+      objectReference: {fileID: 2100000, guid: 3d76f9317fffd694c9284f34ead42a9f, type: 2}
+    - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.4985876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3.498587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 3.498587
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
   m_IsPrefabParent: 0

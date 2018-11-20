@@ -11,8 +11,8 @@ public class MainMenu1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        Reset.instance.ScoreCanvas.SetActive(true);
+    }
 	
 	// Update is called once per frame
 	
