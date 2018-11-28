@@ -25,9 +25,15 @@ public class MainMenu1 : MonoBehaviour {
 
     public GameObject MainMenuUI;
 
+    //Bools
+    public bool StartNewWait;
+    
+
+
 	// Use this for initialization
 	void Start () {
         Reset.instance.ScoreCanvas.SetActive(true);
+        StartNewWait = false;
         
     }
 
@@ -39,8 +45,14 @@ public class MainMenu1 : MonoBehaviour {
 
     public void StartNew()
     {
-        StartNewGO.transform.position = Vector3.MoveTowards(transform.position, Target1StartNew.position, SpeedOfMove * Time.deltaTime); // if shape to target load level bool = true. If load level bool == true then load level.
-        SceneManager.LoadScene("LEVEL_2");
+        StartNewGO.transform.position = Vector3.MoveTowards(transform.position, Target1StartNew.position, SpeedOfMove * Time.deltaTime);
+        // if shape to target load level bool = true. If load level bool == true then load level.
+        StartNewWait = true;
+
+        if (StartNewWait == true)
+        {
+            SceneManager.LoadScene("LEVEL_2");
+        }
     }
 
    
