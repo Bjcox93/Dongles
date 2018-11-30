@@ -9,13 +9,35 @@ public class OptionsMenu1 : MonoBehaviour {
 
     public GameObject MainMenuUI;
 
-	// Use this for initialization
-	void Start () {
-		
+    //Lerp
+    public GameObject MenuNewGO;
+    public Transform TargetMenu_Start;
+    public Transform TargetMenu_End;
+
+    public GameObject ButtonMenuNewGO;
+    public Transform ButtonTargetMenu_Start;
+    public Transform ButtonTargetMenu_End;
+
+    public float SpeedOfMove;
+
+    //Lerp Bools
+    public bool LerpMenu;
+
+    // Use this for initialization
+    void Start () {
+        LerpMenu = false;
 	}
-	
-	// Update is called once per frame
-	
+
+    // Update is called once per frame
+    public void Update()
+    {
+        if (LerpMenu == true)
+        {
+            MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, SpeedOfMove * Time.deltaTime);
+            ButtonMenuNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, SpeedOfMove * Time.deltaTime);
+            SceneManager.LoadScene("Title_Menu");
+        }
+    }
 
     public void StartNew()
     {
@@ -26,7 +48,8 @@ public class OptionsMenu1 : MonoBehaviour {
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Title_Menu");
+        LerpMenu = true;
+        //SceneManager.LoadScene("Title_Menu");
     }
 
     public void QuitGame()

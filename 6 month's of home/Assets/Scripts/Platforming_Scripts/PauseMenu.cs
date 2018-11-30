@@ -11,9 +11,45 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject TutorialObject;
 
-	// Use this for initialization
-	void Start () {
-		
+    //Lerp
+    public GameObject ContinueNewGO;
+    public Transform TargetContinue_Start;
+    public Transform TargetContinue_End;
+
+    public GameObject ButtonContinueNewGO;
+    public Transform ButtonTargetContinue_Start;
+    public Transform ButtonTargetContinue_End;
+
+    public GameObject ResumeNewGO;
+    public Transform TargetResume_Start;
+    public Transform TargetResume_End;
+
+    public GameObject ButtonResumeNewGO;
+    public Transform ButtonTargetResume_Start;
+    public Transform ButtonTargetResume_End;
+
+    public GameObject MenuNewGO;
+    public Transform TargetMenu_Start;
+    public Transform TargetMenu_End;
+
+    public GameObject ButtonMenuNewGO;
+    public Transform ButtonTargetMenu_Start;
+    public Transform ButtonTargetMenu_End;
+
+
+    public float SpeedOfMove;
+
+    //Lerp Bools
+    public bool LerpContinue;
+    public bool LerpResume;
+    public bool LerpMenu;
+
+
+    // Use this for initialization
+    void Start () {
+        LerpContinue = false;
+        LerpMenu = false;
+        LerpResume = false;
 	}
 	
 	// Update is called once per frame
@@ -35,6 +71,34 @@ public class PauseMenu : MonoBehaviour {
         {
             TutorialObject.SetActive(false);
         }
+
+        if (LerpContinue == true)
+        {
+            ContinueNewGO.transform.position = Vector3.Lerp(TargetContinue_Start.transform.position, TargetContinue_End.transform.position, SpeedOfMove * Time.deltaTime);
+            ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetContinue_Start.transform.position, ButtonTargetContinue_End.transform.position, SpeedOfMove * Time.deltaTime);
+            GameManager.instance.LoadGame();
+        }
+
+        if (LerpResume)
+        {
+            ResumeNewGO.transform.position = Vector3.Lerp(TargetResume_Start.transform.position, TargetResume_End.transform.position, SpeedOfMove * Time.deltaTime);
+            ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetResume_Start.transform.position, ButtonTargetResume_End.transform.position, SpeedOfMove * Time.deltaTime);
+
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+            GameIsPaused = false;
+        }
+
+        if (LerpMenu)
+        {
+            MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, SpeedOfMove * Time.deltaTime);
+            ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, SpeedOfMove * Time.deltaTime);
+
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+            GameIsPaused = false;
+            SceneManager.LoadScene("Title_Menu");
+        }
 	}
 
     public void Resume()
@@ -46,6 +110,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Pause()
     {
+        LerpResume = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -53,10 +118,11 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadMenu()
     {
-        pauseMenuUI.SetActive(false);
+        LerpMenu = true;
+        /*pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        SceneManager.LoadScene("Title_Menu");
+        SceneManager.LoadScene("Title_Menu");*/
     }
 
     public void QuitGame()
@@ -67,6 +133,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadGame()
     {
-        GameManager.instance.LoadGame();
+        LerpContinue = true;
+        //GameManager.instance.LoadGame();
     }
 }
