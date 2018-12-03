@@ -79,7 +79,7 @@ public class MainMenu1 : MonoBehaviour {
             print("StartNewWait: " + StartNewWait);
 
         }
-        */
+        
         if (LerpOptions)
         {
             OptionsGO.transform.position = Vector3.Lerp(TargetOptions_Start.transform.position, TargetOptions_End.transform.position, SpeedOfMove * Time.deltaTime);
@@ -92,7 +92,7 @@ public class MainMenu1 : MonoBehaviour {
             ExitGO.transform.position = Vector3.Lerp(TargetExit_Start.transform.position, TargetExit_End.transform.position, SpeedOfMove * Time.deltaTime);
             ButtonsExitGO.transform.position = Vector3.Lerp(ButtonExit_Start.transform.position, ButtonExit_End.transform.position, SpeedOfMove * Time.deltaTime);
             ExitBool = true;
-        }
+        }*/
 
         //Position equals position
         if (StartNewGO.transform.position == TargetStartNew_End.transform.position)
@@ -126,18 +126,40 @@ public class MainMenu1 : MonoBehaviour {
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, progression);
+            ButtonsStartNewGO.transform.position = Vector3.Lerp(ButtonStartNew_Start.transform.position, ButtonStartNew_End.transform.position, progression);
             yield return new WaitForEndOfFrame();
         }
         SceneManager.LoadScene("LEVEL_2");
     }
 
+    IEnumerator WaitForOptionsButton()
+    {
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            OptionsGO.transform.position = Vector3.Lerp(TargetOptions_Start.transform.position, TargetOptions_End.transform.position, progression);
+            ButtonsOptionsGO.transform.position = Vector3.Lerp(ButtonOptions_Start.transform.position, ButtonOptions_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        SceneManager.LoadScene("Title_Menu_Options");
+    }
+
+    IEnumerator WaitForQuitButton()
+    {
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            ExitGO.transform.position = Vector3.Lerp(TargetExit_Start.transform.position, TargetExit_End.transform.position, progression);
+            ButtonsExitGO.transform.position = Vector3.Lerp(ButtonExit_Start.transform.position, ButtonExit_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        Debug.Log("QUIT");
+        Application.Quit();
+    }
+
     public void OptionsMenu()
     {
-        LerpOptions = true;
-        if (OptionsBool == true)
-        {
-            SceneManager.LoadScene("Title_Menu_Options");
-        }
+        StartCoroutine(WaitForOptionsButton());
     }
 
     public void LoadLevelLoadMenu()
@@ -153,15 +175,8 @@ public class MainMenu1 : MonoBehaviour {
 
     public void QuitGame()
     {
-        ExitLerp();
-        LerpExit = true;
+        StartCoroutine(WaitForQuitButton());
 
-        if (ExitBool == true)
-        {
-            Debug.Log("QUIT");
-            Application.Quit();
-        }
-        
     }
 
     public void startNewLerp()

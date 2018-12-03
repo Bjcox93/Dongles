@@ -588,8 +588,47 @@ MonoBehaviour:
   ButtonContinueNewGO: {fileID: 0}
   ButtonTargetContinue_Start: {fileID: 0}
   ButtonTargetContinue_End: {fileID: 0}
+  ResumeNewGO: {fileID: 0}
+  TargetResume_Start: {fileID: 0}
+  TargetResume_End: {fileID: 0}
+  ButtonResumeNewGO: {fileID: 0}
+  ButtonTargetResume_Start: {fileID: 0}
+  ButtonTargetResume_End: {fileID: 0}
+  MenuNewGO: {fileID: 0}
+  TargetMenu_Start: {fileID: 0}
+  TargetMenu_End: {fileID: 0}
+  ButtonMenuNewGO: {fileID: 0}
+  ButtonTargetMenu_Start: {fileID: 0}
+  ButtonTargetMenu_End: {fileID: 0}
   SpeedOfMove: 0
   LerpContinue: 0
+  LerpResume: 0
+  LerpMenu: 0
+  waitTime: 3
+  buttonAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &318849455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +741,31 @@ MonoBehaviour:
   ButtonTargetMenu_End: {fileID: 1295991887}
   SpeedOfMove: 1
   LerpMenu: 0
+  waitTime: 3
+  buttonAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &330839011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,7 +1656,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331518812}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 45.81, y: -6, z: -41.1}
+  m_LocalPosition: {x: 55.1, y: -4.4, z: -41.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1856,15 +1920,15 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 5f33d6b9a3897c944a2a46bcfbb6847d, type: 2}
     - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
       propertyPath: m_LocalScale.x
-      value: 3.9441702
+      value: 5.6978536
       objectReference: {fileID: 0}
     - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
       propertyPath: m_LocalScale.y
-      value: 3.9441702
+      value: 5.6978545
       objectReference: {fileID: 0}
     - target: {fileID: 4259488526099930, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
       propertyPath: m_LocalScale.z
-      value: 3.9441702
+      value: 5.6978545
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}

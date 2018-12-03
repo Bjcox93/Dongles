@@ -23,6 +23,12 @@ public class OptionsMenu1 : MonoBehaviour {
     //Lerp Bools
     public bool LerpMenu;
 
+    //Coroutine Stuff:
+    public float waitTime = 3;
+    public AnimationCurve buttonAnimationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    // Time when the movement started.
+    private float startTime;
+
     // Use this for initialization
     void Start () {
         LerpMenu = false;
@@ -39,6 +45,19 @@ public class OptionsMenu1 : MonoBehaviour {
         }
     }
 
+    IEnumerator WaitForOptionsMenuButton()
+    {
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);
+            ButtonMenuNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        SceneManager.LoadScene("Title_Menu");
+    }
+
+
     public void StartNew()
     {
         SceneManager.LoadScene("LEVEL_1");
@@ -48,7 +67,8 @@ public class OptionsMenu1 : MonoBehaviour {
 
     public void MainMenu()
     {
-        LerpMenu = true;
+        StartCoroutine(WaitForOptionsMenuButton());
+        //LerpMenu = true;
         //SceneManager.LoadScene("Title_Menu");
     }
 

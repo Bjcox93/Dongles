@@ -44,6 +44,12 @@ public class PauseMenu : MonoBehaviour {
     public bool LerpResume;
     public bool LerpMenu;
 
+    //Coroutine Stuff:
+    public float waitTime = 3;
+    public AnimationCurve buttonAnimationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    // Time when the movement started.
+    private float startTime;
+
 
     // Use this for initialization
     void Start () {
@@ -72,7 +78,7 @@ public class PauseMenu : MonoBehaviour {
             TutorialObject.SetActive(false);
         }
 
-        if (LerpContinue == true)
+        /*if (LerpContinue == true)
         {
             ContinueNewGO.transform.position = Vector3.Lerp(TargetContinue_Start.transform.position, TargetContinue_End.transform.position, SpeedOfMove * Time.deltaTime);
             ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetContinue_Start.transform.position, ButtonTargetContinue_End.transform.position, SpeedOfMove * Time.deltaTime);
@@ -98,15 +104,64 @@ public class PauseMenu : MonoBehaviour {
             Time.timeScale = 1f;
             GameIsPaused = false;
             SceneManager.LoadScene("Title_Menu");
-        }
+        }*/
 	}
+
+    IEnumerator WaitForContinueButton()
+    {
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            ContinueNewGO.transform.position = Vector3.Lerp(TargetContinue_Start.transform.position, TargetContinue_End.transform.position, progression);
+            ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetContinue_Start.transform.position, ButtonTargetContinue_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        GameManager.instance.LoadGame();
+    }
+
+    IEnumerator WaitForResumeButton()
+    {
+        for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            ResumeNewGO.transform.position = Vector3.Lerp(TargetResume_Start.transform.position, TargetResume_End.transform.position, progression);
+            ButtonResumeNewGO.transform.position = Vector3.Lerp(ButtonTargetResume_Start.transform.position, ButtonTargetResume_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        Debug.Log("resume");
+    }
+
+    IEnumerator WaitForMenuButton()
+    {
+        Debug.Log("menu");
+        Debug.Log(Time.deltaTime)
+;        for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);
+            ButtonMenuNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+            Debug.Log("menu");
+        }
+        Debug.Log("menu");
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        Debug.Log("menu");
+        SceneManager.LoadScene("Title_Menu");
+    }
 
     public void Resume()
     {
-        LerpResume = true;
+        Debug.Log("resumebuttonpressed");
+        StartCoroutine(WaitForResumeButton());
+       /* LerpResume = true;
        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        GameIsPaused = false;
+        GameIsPaused = false;*/
     }
 
     void Pause()
@@ -119,11 +174,14 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadMenu()
     {
-        LerpMenu = true;
+
+        Debug.Log("loadbuttonpressed");
+        StartCoroutine(WaitForMenuButton());
+        /*LerpMenu = true;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        SceneManager.LoadScene("Title_Menu");
+        SceneManager.LoadScene("Title_Menu");*/
     }
 
     public void QuitGame()

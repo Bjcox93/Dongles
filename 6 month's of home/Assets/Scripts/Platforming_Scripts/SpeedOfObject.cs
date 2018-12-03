@@ -20,7 +20,7 @@ public class SpeedOfObject : MonoBehaviour {
 
         float vel = rb.velocity.magnitude;
         
-        Debug.Log(vel);
+        //Debug.Log(vel);
 
         timeP -= Time.deltaTime;
         

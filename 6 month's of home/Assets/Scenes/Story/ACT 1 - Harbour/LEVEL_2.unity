@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11004,6 +11004,31 @@ MonoBehaviour:
   LerpContinue: 0
   LerpResume: 0
   LerpMenu: 0
+  waitTime: 3
+  buttonAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1000537453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13995,7 +14020,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331518812}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f314b371990ff2b439abd5f0bed69540, type: 3}
   m_Name: 
@@ -14953,16 +14978,16 @@ RectTransform:
   m_GameObject: {fileID: 1418550629}
   m_LocalRotation: {x: -0, y: -0, z: 0.3895308, w: 0.9210135}
   m_LocalPosition: {x: 0, y: 0, z: -3.1}
-  m_LocalScale: {x: 0.44855458, y: 0.44855458, z: 0.44855458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2093346850}
   m_Father: {fileID: 1916180715}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45.851}
-  m_AnchorMin: {x: 0.5637501, y: 0.19133392}
-  m_AnchorMax: {x: 0.6875001, y: 0.4434458}
-  m_AnchoredPosition: {x: -115.5, y: 80.1}
-  m_SizeDelta: {x: 61, y: -82}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -14.999924, y: 4.0092688}
+  m_SizeDelta: {x: 160.00003, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418550631
 MonoBehaviour:
@@ -15267,7 +15292,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: e98a81f7a080cff4795b9862f9cb762a, type: 2}
+  - {fileID: 2100000, guid: e645610c0cf859940ab3c85c39802841, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21808,7 +21833,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0b7d7e6236680ba489703c2a738aadc1, type: 3}
-    m_FontSize: 14
+    m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -26897,7 +26922,7 @@ Transform:
   m_GameObject: {fileID: 2139219899}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 8.65, z: -16.84}
-  m_LocalScale: {x: 1.1183864, y: 1, z: 0.4905165}
+  m_LocalScale: {x: 0.60787845, y: 1, z: 0.4905165}
   m_Children: []
   m_Father: {fileID: 672108953}
   m_RootOrder: 0
