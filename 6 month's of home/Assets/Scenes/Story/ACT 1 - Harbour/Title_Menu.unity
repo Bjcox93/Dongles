@@ -1413,8 +1413,22 @@ MonoBehaviour:
   ButtonContinueNewGO: {fileID: 1873330031}
   ButtonTargetContinue_Start: {fileID: 1873330032}
   ButtonTargetContinue_End: {fileID: 1226205752}
+  ResumeNewGO: {fileID: 0}
+  TargetResume_Start: {fileID: 0}
+  TargetResume_End: {fileID: 0}
+  ButtonResumeNewGO: {fileID: 0}
+  ButtonTargetResume_Start: {fileID: 0}
+  ButtonTargetResume_End: {fileID: 0}
+  MenuNewGO: {fileID: 0}
+  TargetMenu_Start: {fileID: 0}
+  TargetMenu_End: {fileID: 0}
+  ButtonMenuNewGO: {fileID: 0}
+  ButtonTargetMenu_Start: {fileID: 0}
+  ButtonTargetMenu_End: {fileID: 0}
   SpeedOfMove: 1
   LerpContinue: 0
+  LerpResume: 0
+  LerpMenu: 0
 --- !u!114 &1162882159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,6 +1546,31 @@ MonoBehaviour:
   LerpStart: 0
   LerpOptions: 0
   LerpExit: 0
+  waitTime: 3
+  buttonAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1162882164
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -44,6 +44,9 @@ public class MainMenu1 : MonoBehaviour {
     public bool LerpExit;
 
     //Lerp
+    //Time for animaitons
+    public float waitTime = 3;
+    public AnimationCurve buttonAnimationCurve = AnimationCurve.EaseInOut(0,0,1,1);
     // Time when the movement started.
     private float startTime;
 
@@ -67,15 +70,16 @@ public class MainMenu1 : MonoBehaviour {
     // Update is called once per frame
     public void Update()
     {
+        /*
         if (LerpStart)
         {
             StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, SpeedOfMove * Time.deltaTime);
             ButtonsStartNewGO.transform.position = Vector3.Lerp(ButtonStartNew_Start.transform.position, ButtonStartNew_End.transform.position, SpeedOfMove * Time.deltaTime);
             StartNewWait = true;
-
+            print("StartNewWait: " + StartNewWait);
 
         }
-
+        */
         if (LerpOptions)
         {
             OptionsGO.transform.position = Vector3.Lerp(TargetOptions_Start.transform.position, TargetOptions_End.transform.position, SpeedOfMove * Time.deltaTime);
@@ -99,6 +103,7 @@ public class MainMenu1 : MonoBehaviour {
 
     }
 
+    /*
     public void StartNew()
     {
         LerpStart = true;
@@ -108,9 +113,23 @@ public class MainMenu1 : MonoBehaviour {
         {
             SceneManager.LoadScene("LEVEL_2");
         }
+    }*/
+
+    public void StartNew()
+    {
+        StartCoroutine(WaitForStartButton());
     }
 
-   
+    IEnumerator WaitForStartButton()
+    {
+        for(float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        SceneManager.LoadScene("LEVEL_2");
+    }
 
     public void OptionsMenu()
     {

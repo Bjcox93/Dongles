@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44772756, g: 0.4977042, b: 0.5754031, a: 1}
+  m_IndirectSpecularColor: {r: 0.4477281, g: 0.4977048, b: 0.57540387, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9907,7 +9907,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 22352b834b623724e8da83de6a05f0ef, type: 2}
+      objectReference: {fileID: 2100000, guid: 606cabc23a610874d889de487950b9fb, type: 2}
     - target: {fileID: 33533323665735022, guid: a0b2e407c1419a245868955242415b46,
         type: 2}
       propertyPath: m_Mesh
@@ -16578,12 +16578,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1314907560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.88, y: 18.1, z: 10.7}
-  m_LocalScale: {x: 11.420449, y: 13.122684, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.000823714, y: 0.0013987771, z: 0.0009074002}
+  m_LocalScale: {x: 0.0027927747, y: 0.0025614556, z: 0.000062970175}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_Father: {fileID: 1425794977}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329940471
 GameObject:
@@ -18665,6 +18665,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4c6ee84133e54794caf27cf88fdbeb8e, type: 2}
+    - target: {fileID: 100000, guid: c86493b45c3eb04478846b8b6d7d66da, type: 3}
+      propertyPath: m_Name
+      value: LEVEL_4_Art
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c86493b45c3eb04478846b8b6d7d66da, type: 3}
   m_IsPrefabParent: 0
@@ -18686,6 +18690,10 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c86493b45c3eb04478846b8b6d7d66da, type: 3}
+--- !u!4 &1425794977 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: c86493b45c3eb04478846b8b6d7d66da, type: 3}
+  m_PrefabInternal: {fileID: 1425794974}
 --- !u!1001 &1426247755
 Prefab:
   m_ObjectHideFlags: 0
