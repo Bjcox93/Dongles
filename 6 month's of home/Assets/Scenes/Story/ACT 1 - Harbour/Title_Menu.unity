@@ -121,6 +121,25 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400022, guid: 83eae922038e48c4da5cdc5f10b1b4e9, type: 3}
   m_PrefabInternal: {fileID: 1605300737}
+--- !u!23 &349132 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300018, guid: 83eae922038e48c4da5cdc5f10b1b4e9,
+    type: 3}
+  m_PrefabInternal: {fileID: 1605300737}
+--- !u!114 &349133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MouseOverColor: {r: 1, g: 0, b: 0, a: 1}
+  m_OriginalColor: {r: 0.8431373, g: 0.2784314, b: 0.26666668, a: 1}
+  m_Renderer: {fileID: 349132}
 --- !u!1 &156321812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1448,31 @@ MonoBehaviour:
   LerpContinue: 0
   LerpResume: 0
   LerpMenu: 0
+  waitTime: 3
+  buttonAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1162882159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,6 +2589,25 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400012, guid: 83eae922038e48c4da5cdc5f10b1b4e9, type: 3}
   m_PrefabInternal: {fileID: 1605300737}
+--- !u!23 &1564465925 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300008, guid: 83eae922038e48c4da5cdc5f10b1b4e9,
+    type: 3}
+  m_PrefabInternal: {fileID: 1605300737}
+--- !u!114 &1564465926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564465923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MouseOverColor: {r: 1, g: 0, b: 0, a: 1}
+  m_OriginalColor: {r: 0.8705883, g: 0.31764707, b: 0.31764707, a: 0}
+  m_Renderer: {fileID: 1564465925}
 --- !u!64 &1564465927
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2559,17 +2622,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 83eae922038e48c4da5cdc5f10b1b4e9, type: 3}
---- !u!114 &1564465928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1564465923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1605300737
 Prefab:
   m_ObjectHideFlags: 0
@@ -2784,6 +2836,25 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 83eae922038e48c4da5cdc5f10b1b4e9, type: 3}
   m_PrefabInternal: {fileID: 1605300737}
+--- !u!23 &1605300740 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300004, guid: 83eae922038e48c4da5cdc5f10b1b4e9,
+    type: 3}
+  m_PrefabInternal: {fileID: 1605300737}
+--- !u!114 &1605300741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1605300739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MouseOverColor: {r: 0.81568635, g: 0.81568635, b: 0.81568635, a: 1}
+  m_OriginalColor: {r: 1, g: 1, b: 1, a: 0}
+  m_Renderer: {fileID: 1605300740}
 --- !u!1001 &1646343734
 Prefab:
   m_ObjectHideFlags: 0
@@ -3308,6 +3379,25 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400016, guid: 83eae922038e48c4da5cdc5f10b1b4e9, type: 3}
   m_PrefabInternal: {fileID: 1605300737}
+--- !u!23 &1876275401 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300012, guid: 83eae922038e48c4da5cdc5f10b1b4e9,
+    type: 3}
+  m_PrefabInternal: {fileID: 1605300737}
+--- !u!114 &1876275402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876275399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MouseOverColor: {r: 0.8117648, g: 0.8117648, b: 0.8117648, a: 1}
+  m_OriginalColor: {r: 1, g: 1, b: 1, a: 0}
+  m_Renderer: {fileID: 1876275401}
 --- !u!1 &1879912582
 GameObject:
   m_ObjectHideFlags: 0

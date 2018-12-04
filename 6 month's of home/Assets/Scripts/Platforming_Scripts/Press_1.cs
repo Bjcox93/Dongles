@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Press_1 : MonoBehaviour {
 
-    public GameObject press_b;
+ /*   public GameObject press_b;
     public GameObject press_space;
 
-    
 
-	// Use this for initialization
-	void Start () {
+    
+    // Use this for initialization
+    void Start () {
       
     }
 	
@@ -26,6 +26,9 @@ public class Press_1 : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             press_space.SetActive(false);
+            press_b.SetActive(false);
+            Destroy(press_b);
+            Destroy(press_space);
         }
-    }
+    }*/
 }

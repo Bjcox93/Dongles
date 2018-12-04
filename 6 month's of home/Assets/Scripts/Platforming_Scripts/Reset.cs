@@ -15,6 +15,9 @@ public class Reset : MonoBehaviour {
 
     public GameObject ScoreCanvas;
     public GameObject ResetObj;
+    public GameObject TutorialNotes;
+    public GameObject press_b;
+    public GameObject press_space;
 
     private void Awake()
     {
@@ -36,6 +39,25 @@ public class Reset : MonoBehaviour {
     void Start () {
         DontDestroyOnLoad(ScoreCanvas);
         DontDestroyOnLoad(ResetObj);
+        DontDestroyOnLoad(TutorialNotes);
+        DontDestroyOnLoad(press_b);
+        DontDestroyOnLoad(press_space);
+
+        
+
+        if (GameManager.instance.tutorialUI == true)
+        {
+            press_b.SetActive(true);
+            press_space.SetActive(false);
+        }
+
+        if (GameManager.instance.tutorialUI == false)
+        {
+            press_space.SetActive(false);
+            press_b.SetActive(false);
+        }
+
+
     }
 	
 	// Update is called once per frame
@@ -49,7 +71,22 @@ public class Reset : MonoBehaviour {
             SceneManager.LoadScene(scene, LoadSceneMode.Single);
 
             scoreAmount = scoreAmount + 1;
+
+            //TutorialNotes
+            GameManager.instance.tutorialBoolFalse();
+            press_space.SetActive(false);
+            press_b.SetActive(false);
+            
+           
         }
+
+        //TutorialNotesCont
+        if (Input.GetKeyDown(KeyCode.B) && GameManager.instance.tutorialUI == true)
+        {
+            press_b.SetActive(false);
+            press_space.SetActive(true);
+        }
+
     }
 
     public void ResetFun()

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
 	public string currentLevel;
 
+    public bool tutorialUI;
+
 	private void Awake()
 	{
 		if (instance == null)
@@ -21,7 +23,18 @@ public class GameManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 		DontDestroyOnLoad(gameObject);
-	}
+        tutorialUI = true;
+    }
+
+    public void start()
+    {
+        tutorialUI = true;
+    }
+
+    public void tutorialBoolFalse()
+    {
+        tutorialUI = false;
+    }
 
 	public void LoadGame()
 	{
