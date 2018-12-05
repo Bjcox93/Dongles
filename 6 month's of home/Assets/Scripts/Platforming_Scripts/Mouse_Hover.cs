@@ -4,45 +4,102 @@ using UnityEngine;
 
 public class Mouse_Hover : MonoBehaviour {
 
-    //ColourMouse
-    //When the mouse hovers over the GameObject, it turns to this color (red)
-    public Color m_MouseOverColor = Color.red;
+    public GameObject Start;
+    public GameObject Continue;
+    public GameObject Options;
+    public GameObject Exit;
 
-    //This stores the GameObject’s original color
-    public Color m_OriginalColor;
-
-    //Get the GameObject’s mesh renderer to access the GameObject’s material and color
-    public MeshRenderer m_Renderer;
-
-    private void Start()
+    public void Update()
     {
-        //When the mouse hovers over the GameObject, it turns to this color (red)
-        Color m_MouseOverColor = Color.red;
+        int layerMask = 1 << 9;
+        RaycastHit hit;
 
-        //This stores the GameObject’s original color
-        m_Renderer = GetComponent<MeshRenderer>();
-       m_OriginalColor = m_Renderer.material.color;
+        //Debug.Log(Camera.main.ScreenPointToRay(Input.mousePosition));
 
-        //Get the GameObject’s mesh rende
-    }
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+        if (Physics.Raycast(ray, out hit, layerMask))
+        {
+            Renderer rend = hit.transform.GetComponent<Renderer>();
+            rend.material.color = Color.blue;
 
-    void OnMouseOver()
-    {
+            //NOT SELECTED;
+            Renderer rend2 = Start.gameObject.transform.GetComponent<Renderer>();
+            Renderer rend3 = Continue.gameObject.transform.GetComponent<Renderer>();
+            Renderer rend4 = Options.gameObject.transform.GetComponent<Renderer>();
+            Renderer rend5 = Exit.gameObject.transform.GetComponent<Renderer>();
+
+            //print("Found an object - distance: ");
+
+            Debug.Log(hit.transform.gameObject.name);
+
+            if (hit.transform.tag == "StartBlock")
+            {
+                Debug.Log("StartBlockHit");
+                rend.material.color = Color.blue;
+                rend3.material.color = Color.black;
+                rend4.material.color = Color.black;
+                rend5.material.color = Color.black;
+            }
+
+            if (hit.transform.tag == "ContinueBlock")
+            {
+                Debug.Log("ContinueBlockHit");
+                rend.material.color = Color.yellow;
+                rend2.material.color = Color.black;
+                rend4.material.color = Color.black;
+                rend5.material.color = Color.black;
+            }
+
+            if (hit.transform.tag == "OptionsBlock")
+            {
+                Debug.Log("OptionsBlockHit");
+                rend.material.color = Color.cyan;
+                rend2.material.color = Color.black;
+                rend3.material.color = Color.black;
+                rend5.material.color = Color.black;
+            }
+
+            if (hit.transform.tag == "ExitBlock")
+            {
+                Debug.Log("ExitBlockHit");
+                rend.material.color = Color.green;
+                rend2.material.color = Color.black;
+                rend3.material.color = Color.black;
+                rend4.material.color = Color.black;
+            }
+            /* if (hit.transform.tag != "StartBlock")
+             {
+                 Debug.Log("StartBlockNotHit");
+                 rend.material.color = Color.red;
+             }*/
+        }
+
         
-        //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("Mouse is over GameObject.");
 
-        // Change the color of the GameObject to red when the mouse is over GameObject
-        m_Renderer.material.color = m_MouseOverColor;
+        /*if(hit.transform.tag == "StartBlock")
+        {
+
+        }*/
+
+
+
+        else { return; }
     }
 
-    void OnMouseExit()
-    {
-        //The mouse is no longer hovering over the GameObject so output this message each frame
-        Debug.Log("Mouse is no longer on GameObject.");
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    /* Renderer colourChange;
 
-        // Reset the color of the GameObject back to normal
-        m_Renderer.material.color = m_OriginalColor;
-    }
+     private void Awake()
+     {
+         colourChange = GetComponent<Renderer>();
+     }
+
+     private void OnMouseDown()
+     {
+         if (UI_overlay.IsPointerOverUIObject())
+         {
+             colourChange.material.color = Color.black;
+         }
+     }*/
 }
