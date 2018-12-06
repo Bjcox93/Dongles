@@ -1055,6 +1055,14 @@ Prefab:
       propertyPath: m_Name
       value: Black_Ring
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_TagString
+      value: StartBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
   m_IsPrefabParent: 0
@@ -1070,6 +1078,20 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
   m_PrefabInternal: {fileID: 616339273}
+--- !u!64 &616339279
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616339276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300010, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
 --- !u!1 &662859533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1238,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0b7d7e6236680ba489703c2a738aadc1, type: 3}
+    m_Font: {fileID: 12800000, guid: 5d9392e9e3962374db4e25f420baab75, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -1592,9 +1614,10 @@ GameObject:
   - component: {fileID: 1331518815}
   - component: {fileID: 1331518814}
   - component: {fileID: 1331518813}
+  - component: {fileID: 1331518817}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1662,6 +1685,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1331518817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331518812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Start: {fileID: 616339276}
+  Continue: {fileID: 0}
+  Options: {fileID: 0}
+  Exit: {fileID: 0}
 --- !u!1 &1474930511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,7 +1968,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.6978545
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64322291367889482, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0bb10596c68736848abb6a806b2a5d7d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1661912243
@@ -2007,7 +2046,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0b7d7e6236680ba489703c2a738aadc1, type: 3}
+    m_Font: {fileID: 12800000, guid: 5d9392e9e3962374db4e25f420baab75, type: 3}
     m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
@@ -2233,7 +2272,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0b7d7e6236680ba489703c2a738aadc1, type: 3}
+    m_Font: {fileID: 12800000, guid: 5d9392e9e3962374db4e25f420baab75, type: 3}
     m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
@@ -2511,7 +2550,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0b7d7e6236680ba489703c2a738aadc1, type: 3}
+    m_Font: {fileID: 12800000, guid: 5d9392e9e3962374db4e25f420baab75, type: 3}
     m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
