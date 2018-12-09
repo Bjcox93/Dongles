@@ -15,10 +15,22 @@ public class SceneTransition1 : MonoBehaviour {
     // Time when the movement started.
     private float startTime;
 
-    //Circle
-    public GameObject BaseCircle;
-    public GameObject SmallCircle;
-    public GameObject BigCircle;
+    //Lines:
+    public GameObject BaseLine1;
+    public GameObject SmallLine1;
+    public GameObject BigLine1;
+    //________________________
+    public GameObject BaseLine2;
+    public GameObject SmallLine2;
+    public GameObject BigLine2;
+    //________________________
+    public GameObject BaseLine3;
+    public GameObject SmallLine3;
+    public GameObject BigLine3;
+    //________________________
+    public GameObject BaseLine4;
+    public GameObject SmallLine4;
+    public GameObject BigLine4;
 
     // Use this for initialization
     void Start()
@@ -38,7 +50,10 @@ public class SceneTransition1 : MonoBehaviour {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
-            BaseCircle.transform.localScale = Vector3.Lerp(SmallCircle.transform.localScale, BigCircle.transform.localScale, progression);
+            BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
+            BaseLine2.transform.position = Vector3.Lerp(SmallLine2.transform.position, BigLine2.transform.position, progression);
+            BaseLine3.transform.position = Vector3.Lerp(SmallLine3.transform.position, BigLine3.transform.position, progression);
+            BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
             yield return new WaitForEndOfFrame();
             GetComponent<AudioSource>().Play();
         }
