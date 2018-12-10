@@ -3959,7 +3959,6 @@ GameObject:
   - component: {fileID: 378762777}
   - component: {fileID: 378762776}
   - component: {fileID: 378762775}
-  - component: {fileID: 378762774}
   m_Layer: 0
   m_Name: Beg_Trans_BG1
   m_TagString: Untagged
@@ -3967,20 +3966,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &378762774
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 378762773}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &378762775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11685,7 +11670,6 @@ GameObject:
   - component: {fileID: 1017926735}
   - component: {fileID: 1017926734}
   - component: {fileID: 1017926733}
-  - component: {fileID: 1017926732}
   m_Layer: 0
   m_Name: Beg_Trans_BG3
   m_TagString: Untagged
@@ -11693,20 +11677,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1017926732
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1017926731}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1017926733
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12403,7 +12373,6 @@ GameObject:
   - component: {fileID: 1101197715}
   - component: {fileID: 1101197714}
   - component: {fileID: 1101197713}
-  - component: {fileID: 1101197712}
   m_Layer: 0
   m_Name: Beg_Trans_BG4
   m_TagString: Untagged
@@ -12411,20 +12380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1101197712
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1101197711}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1101197713
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22595,7 +22550,6 @@ GameObject:
   - component: {fileID: 2017753539}
   - component: {fileID: 2017753538}
   - component: {fileID: 2017753537}
-  - component: {fileID: 2017753536}
   m_Layer: 0
   m_Name: Beg_Trans_BG2
   m_TagString: Untagged
@@ -22603,20 +22557,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2017753536
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2017753535}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2017753537
 MeshRenderer:
   m_ObjectHideFlags: 0
