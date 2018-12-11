@@ -20,7 +20,7 @@ public class SceneTransition6 : MonoBehaviour {
     {
         if (other.CompareTag("Tank"))
         {
-            SceneManager.LoadScene("ACT 1.11");
+            SceneManager.LoadScene("LEVEL_10");
         }
     }
     }

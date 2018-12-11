@@ -20,7 +20,7 @@ public class SceneTransition8 : MonoBehaviour {
     {
         if (other.CompareTag("Tank"))
         {
-            SceneManager.LoadScene("ACT 1.13");
+            SceneManager.LoadScene("Title_Splash_Screen");
         }
     }
     }

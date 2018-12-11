@@ -32,11 +32,14 @@ public class SceneTransition1 : MonoBehaviour {
     public GameObject SmallLine4;
     public GameObject BigLine4;
 
+    public GameObject ParticalGrp;
+
     // Use this for initialization
     void Start()
     {
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = EndBoop1;
+        ParticalGrp.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,6 +52,7 @@ public class SceneTransition1 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
+            ParticalGrp.SetActive(true);
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
             BaseLine2.transform.position = Vector3.Lerp(SmallLine2.transform.position, BigLine2.transform.position, progression);
