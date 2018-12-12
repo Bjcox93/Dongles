@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransition15 : MonoBehaviour {
+    
+
+
     public AudioClip EndBoop1;
 
-    public string nextLevel = "LEVEL_2";
-
+    public string nextLevel = "LEVEL_1";
 
     //Scene transition
     public float waitTime = 3;
@@ -53,7 +55,6 @@ public class SceneTransition15 : MonoBehaviour {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
             ParticalGrp.SetActive(true);
-            
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
             BaseLine2.transform.position = Vector3.Lerp(SmallLine2.transform.position, BigLine2.transform.position, progression);
@@ -70,24 +71,23 @@ public class SceneTransition15 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
-
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Tank"))
         {
             /*GetComponent<AudioSource>().Play();
-            SceneManager.LoadScene("LEVEL_1");
-            Debug.LogError (SceneManager.GetSceneByName (nextLevel).buildIndex);
-			GameManager.instance.currentLevel = nextLevel;
+            SceneManager.LoadScene("LEVEL_7");
+            Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+            GameManager.instance.currentLevel = nextLevel;
             GameManager.instance.SaveGame();
             SceneManager.LoadScene(nextLevel);*/
 
             //SceneTransition
             Time.timeScale = 0.2f;
             StartCoroutine(WaitForSceneTrans());
+
         }
     }
-    }
+}
