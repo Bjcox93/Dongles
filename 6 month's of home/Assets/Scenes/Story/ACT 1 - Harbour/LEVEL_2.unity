@@ -7476,6 +7476,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 114522186489085588, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: Screen_Shake
+      value: 
+      objectReference: {fileID: 1331518822}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_IsPrefabParent: 0
@@ -12117,6 +12122,7 @@ GameObject:
   - component: {fileID: 1331518818}
   - component: {fileID: 1331518819}
   - component: {fileID: 1331518820}
+  - component: {fileID: 1331518822}
   - component: {fileID: 1331518821}
   m_Layer: 0
   m_Name: Main Camera
@@ -12263,6 +12269,19 @@ MonoBehaviour:
   Continue: {fileID: 656531994}
   Options: {fileID: 656531998}
   Exit: {fileID: 656531997}
+--- !u!114 &1331518822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331518812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6703ccfa8b4c34b4e99289a350d86b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intensity: 0.015
+  ball: {fileID: 1331518816}
 --- !u!1 &1334721442
 GameObject:
   m_ObjectHideFlags: 0

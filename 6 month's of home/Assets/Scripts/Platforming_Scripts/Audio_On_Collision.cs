@@ -9,6 +9,12 @@ public class Audio_On_Collision : MonoBehaviour {
                               // This Will Configure the  AudioSource Component; 
                               // MAke Sure You added AudioSouce to death Zone;
     public static float sfxVolume = 0.5f;
+
+    //----------------------------------------------------------------------------
+    //ScreenShake;
+    public Screen_Shake Screen_Shake;
+    public float duration = 0.2f; 
+
     void Start()
     {
         GetComponent<AudioSource>().playOnAwake = false;
@@ -23,5 +29,6 @@ public class Audio_On_Collision : MonoBehaviour {
     void OnCollisionEnter()  //Plays Sound Whenever collision detected
     {
         GetComponent<AudioSource>().Play();
+        Screen_Shake.Shake(duration);
     }
 }
