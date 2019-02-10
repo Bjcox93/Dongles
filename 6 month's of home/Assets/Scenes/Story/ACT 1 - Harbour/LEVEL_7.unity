@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44653052, g: 0.4963603, b: 0.57479155, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465297, g: 0.4963597, b: 0.5747902, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13774,6 +13774,7 @@ MonoBehaviour:
   SmallLine4: {fileID: 1083463936}
   BigLine4: {fileID: 1565913768}
   ParticalGrp: {fileID: 1302921040}
+  EndLevel15: 0
 --- !u!114 &1173713592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15342,6 +15343,7 @@ GameObject:
   - component: {fileID: 1331518819}
   - component: {fileID: 1331518820}
   - component: {fileID: 1331518821}
+  - component: {fileID: 1331518822}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Camera
@@ -15566,6 +15568,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1331518822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331518812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: c8a112b26085cfe4b8364660cca2afdb, type: 2}
 --- !u!1 &1334721442
 GameObject:
   m_ObjectHideFlags: 0
