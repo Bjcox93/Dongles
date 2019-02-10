@@ -48,7 +48,7 @@ public class Screen_Shake : MonoBehaviour
         var startTime = Time.realtimeSinceStartup;
         while (Time.realtimeSinceStartup < startTime + _pendingShakeDuration)
         {
-            var randomPoint = ball.position + new Vector3(0,0, Random.Range(-1f, 1f) );
+            var randomPoint = ball.position + new Vector3(0,0, Random.Range(-0.25f, 0.25f) );
             _target.localPosition = randomPoint;
             yield return null;
         }

@@ -5,6 +5,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Reset : MonoBehaviour {
+    public SceneTransition SceneTrans0;
+    public SceneTransition1 SceneTrans1;
+    public SceneTransition2 SceneTrans2;
+    public SceneTransition3 SceneTrans3;
+    public SceneTransition4 SceneTrans4;
+    public SceneTransition6 SceneTrans6;
+    public SceneTransition7 SceneTrans7;
+    public SceneTransition8 SceneTrans8;
+    public SceneTransition15 SceneTrans15;
+    public SceneTransition16 SceneTrans16;
 
     public static Reset instance = null;
 
@@ -67,16 +77,21 @@ public class Reset : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            int scene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(scene, LoadSceneMode.Single);
+            if(SceneTrans0 != null && !SceneTrans0.EndLevel0 || SceneTrans1 != null && !SceneTrans1.EndLevel1 || SceneTrans2 != null && !SceneTrans2.EndLevel2 || 
+                SceneTrans3 != null && !SceneTrans3.EndLevel3 || SceneTrans4 != null && !SceneTrans4.EndLevel4 || SceneTrans6 != null && !SceneTrans6.EndLevel6 ||
+                SceneTrans7 != null && !SceneTrans7.EndLevel7 || SceneTrans8 != null && !SceneTrans8.EndLevel8 || SceneTrans15 != null && !SceneTrans15.EndLevel15
+                || SceneTrans16 != null && !SceneTrans16.EndLevel16)
+            {
+                int scene = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(scene, LoadSceneMode.Single);
 
-            scoreAmount = scoreAmount + 1;
+                scoreAmount = scoreAmount + 1;
 
-            //TutorialNotes
-            GameManager.instance.tutorialBoolFalse();
-            press_space.SetActive(false);
-            press_b.SetActive(false);
-            
+                //TutorialNotes
+                GameManager.instance.tutorialBoolFalse();
+                press_space.SetActive(false);
+                press_b.SetActive(false);
+            }
            
         }
 

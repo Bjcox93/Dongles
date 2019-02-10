@@ -34,12 +34,17 @@ public class SceneTransition6 : MonoBehaviour {
 
     public GameObject ParticalGrp;
 
+    //------------------------
+    public bool EndLevel6;
+
     // Use this for initialization
     void Start()
     {
+        Reset.instance.SceneTrans6 = this;
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = EndBoop1;
         ParticalGrp.SetActive(false);
+        EndLevel6 = false;
     }
 
     // Update is called once per frame
@@ -66,6 +71,7 @@ public class SceneTransition6 : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_10");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+        EndLevel6 = false;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
@@ -85,6 +91,7 @@ public class SceneTransition6 : MonoBehaviour {
             //SceneTransition
             Time.timeScale = 0.2f;
             StartCoroutine(WaitForSceneTrans());
+            EndLevel6 = true;
 
         }
     }

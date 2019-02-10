@@ -34,12 +34,18 @@ public class SceneTransition8 : MonoBehaviour {
 
     public GameObject ParticalGrp;
 
+    //-------------------------
+
+    public bool EndLevel8;
+
     // Use this for initialization
     void Start()
     {
+        Reset.instance.SceneTrans8 = this;
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = EndBoop1;
         ParticalGrp.SetActive(false);
+        EndLevel8 = false;
     }
 
     // Update is called once per frame
@@ -66,6 +72,7 @@ public class SceneTransition8 : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Title_Splash_Screen");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+        EndLevel8 = false;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
@@ -85,6 +92,7 @@ public class SceneTransition8 : MonoBehaviour {
             //SceneTransition
             Time.timeScale = 0.2f;
             StartCoroutine(WaitForSceneTrans());
+            EndLevel8 = true;
 
         }
     }
