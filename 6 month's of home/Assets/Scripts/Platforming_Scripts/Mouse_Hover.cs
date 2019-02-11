@@ -21,7 +21,7 @@ public class Mouse_Hover : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, layerMask))
         {
             Renderer rend = hit.transform.GetComponent<Renderer>();
-            rend.material.color = Color.blue;
+            rend.material.color = Color.red;
 
             //NOT SELECTED;
             Renderer rend2 = Start.gameObject.transform.GetComponent<Renderer>();

@@ -9232,7 +9232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4805684549798798, guid: e7267f60a8196514086e515da8744936, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -54.7
+      value: -47.8
       objectReference: {fileID: 0}
     - target: {fileID: 4805684549798798, guid: e7267f60a8196514086e515da8744936, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15446,7 +15446,7 @@ MonoBehaviour:
   target: {fileID: 1291513540}
   target2: {fileID: 0}
   smoothSpeed: 10
-  offSet: {x: 50, y: 2, z: 0}
+  offSet: {x: 40, y: 2, z: 0}
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
