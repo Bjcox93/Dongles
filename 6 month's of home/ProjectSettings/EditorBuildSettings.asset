@@ -20,12 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story/ACT 1 - Harbour/Title_Menu_Controls.unity
     guid: aa142ab138d9cc44a94d33209c2c0ab4
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/2d6d23a3f54f0834bb6e97f65aca7407
-    guid: 2d6d23a3f54f0834bb6e97f65aca7407
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/c3d437ac5d684274eb6a8811e8b398d0
-    guid: c3d437ac5d684274eb6a8811e8b398d0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Story/ACT 1 - Harbour/LEVEL_2.unity
     guid: 347b436a1a7da4845bfc931c6fdf828e
@@ -57,14 +57,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/ACT 1 - Harbour/LEVEL_1.unity
     guid: 59bbe1d55b0e265408e3668639611e0d
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/772830b4017876c4182f87d205765f1e
-    guid: 772830b4017876c4182f87d205765f1e
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/03289abd534c18a428c1979765dd1e66
-    guid: 03289abd534c18a428c1979765dd1e66
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/890e8c1001a2b864184bbcf5807d38ec
-    guid: 890e8c1001a2b864184bbcf5807d38ec
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Story/ACT 1 - Harbour/Title_Splash_Screen.unity
     guid: 4d966f63962969f469364290e49ac4f7
