@@ -7481,6 +7481,31 @@ Prefab:
       propertyPath: Screen_Shake
       value: 
       objectReference: {fileID: 1331518822}
+    - target: {fileID: 82099465072562642, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82099465072562642, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82099465072562642, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82099465072562642, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dcbd6a07851d6684185c3f5cf70a65a1, type: 3}
+    - target: {fileID: 114522186489085588, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: Boop
+      value: 
+      objectReference: {fileID: 8300000, guid: dcbd6a07851d6684185c3f5cf70a65a1, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_IsPrefabParent: 0
@@ -12282,7 +12307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6703ccfa8b4c34b4e99289a350d86b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 0.015
+  Intensity: 0.01
   ball: {fileID: 1331518816}
 --- !u!114 &1331518823
 MonoBehaviour:
