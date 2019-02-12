@@ -37,8 +37,8 @@ public class Mouse_Hover : MonoBehaviour {
             {
                 Debug.Log("StartBlockHit");
                 rend.material.color = Color.red;
-                rend3.material.color = Color.black;
-                rend4.material.color = Color.black;
+                rend3.material.color = Color.white;
+                rend4.material.color = Color.white;
                 rend5.material.color = Color.black;
             }
 
@@ -47,7 +47,7 @@ public class Mouse_Hover : MonoBehaviour {
                 Debug.Log("ContinueBlockHit");
                 rend.material.color = Color.red;
                 rend2.material.color = Color.black;
-                rend4.material.color = Color.black;
+                rend4.material.color = Color.white;
                 rend5.material.color = Color.black;
             }
 
@@ -56,7 +56,7 @@ public class Mouse_Hover : MonoBehaviour {
                 Debug.Log("OptionsBlockHit");
                 rend.material.color = Color.red;
                 rend2.material.color = Color.black;
-                rend3.material.color = Color.black;
+                rend3.material.color = Color.white;
                 rend5.material.color = Color.black;
             }
 
@@ -65,8 +65,8 @@ public class Mouse_Hover : MonoBehaviour {
                 Debug.Log("ExitBlockHit");
                 rend.material.color = Color.red;
                 rend2.material.color = Color.black;
-                rend3.material.color = Color.black;
-                rend4.material.color = Color.black;
+                rend3.material.color = Color.white;
+                rend4.material.color = Color.white;
             }
             /* if (hit.transform.tag != "StartBlock")
              {
