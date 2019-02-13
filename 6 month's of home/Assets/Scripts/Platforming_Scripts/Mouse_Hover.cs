@@ -21,7 +21,7 @@ public class Mouse_Hover : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, layerMask))
         {
             Renderer rend = hit.transform.GetComponent<Renderer>();
-            rend.material.color = Color.red;
+            rend.material.color = Color.black;
 
             //NOT SELECTED;
             Renderer rend2 = Start.gameObject.transform.GetComponent<Renderer>();
@@ -36,35 +36,35 @@ public class Mouse_Hover : MonoBehaviour {
             if (hit.transform.tag == "StartBlock")
             {
                 Debug.Log("StartBlockHit");
-                rend.material.color = Color.red;
+                rend.material.color = Color.black;
                 rend3.material.color = Color.white;
                 rend4.material.color = Color.white;
-                rend5.material.color = Color.black;
+                rend5.material.color = Color.red;
             }
 
             if (hit.transform.tag == "ContinueBlock")
             {
                 Debug.Log("ContinueBlockHit");
-                rend.material.color = Color.red;
-                rend2.material.color = Color.black;
+                rend.material.color = Color.black;
+                rend2.material.color = Color.red;
                 rend4.material.color = Color.white;
-                rend5.material.color = Color.black;
+                rend5.material.color = Color.red;
             }
 
             if (hit.transform.tag == "OptionsBlock")
             {
                 Debug.Log("OptionsBlockHit");
-                rend.material.color = Color.red;
-                rend2.material.color = Color.black;
+                rend.material.color = Color.black;
+                rend2.material.color = Color.red;
                 rend3.material.color = Color.white;
-                rend5.material.color = Color.black;
+                rend5.material.color = Color.red;
             }
 
             if (hit.transform.tag == "ExitBlock")
             {
                 Debug.Log("ExitBlockHit");
-                rend.material.color = Color.red;
-                rend2.material.color = Color.black;
+                rend.material.color = Color.black;
+                rend2.material.color = Color.red;
                 rend3.material.color = Color.white;
                 rend4.material.color = Color.white;
             }
