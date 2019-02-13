@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu1 : MonoBehaviour {
 
@@ -53,6 +54,9 @@ public class MainMenu1 : MonoBehaviour {
     // Total distance between the markers.
     private float journeyLength;
 
+    public AudioClip BigClick;
+    public AudioSource AudioSource;
+
 
     // Use this for initialization
     void Start () {
@@ -63,8 +67,8 @@ public class MainMenu1 : MonoBehaviour {
         LerpStart = false;
         LerpOptions = false;
         LerpExit = false;
+        AudioSource = GetComponent<AudioSource>();
 
-       
     }
 
     // Update is called once per frame
@@ -122,7 +126,8 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForStartButton()
     {
-        for(float t = 0; t < waitTime; t += Time.deltaTime)
+        AudioSource.PlayOneShot(BigClick, 0.5f);
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, progression);
@@ -134,6 +139,7 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForOptionsButton()
     {
+        AudioSource.PlayOneShot(BigClick, 0.5f);
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
@@ -146,6 +152,7 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForQuitButton()
     {
+        AudioSource.PlayOneShot(BigClick, 0.5f);
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
