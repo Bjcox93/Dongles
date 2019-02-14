@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514311, g: 0.500732, b: 0.5713047, a: 1}
+  m_IndirectSpecularColor: {r: 0.45143157, g: 0.50073254, b: 0.5713059, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -162,7 +162,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c4aac494834130d408c703b6cd7f9687, type: 2}
+  - {fileID: 2100000, guid: 8ef638f4c3e87ca46b0f845d602ecb65, type: 2}
   - {fileID: 2100000, guid: 007705013940fb84c882ae6832d93b41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -214,7 +214,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 1
   autoRandomSeed: 1
@@ -767,7 +767,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 10
+    maxNumParticles: 2
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -8156,7 +8156,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1afc27087c4dd134aa13125dec6c1f2f, type: 2}
+  - {fileID: 2100000, guid: d127ff6ca31d71d488f02f6c02944e5b, type: 2}
   - {fileID: 2100000, guid: 007705013940fb84c882ae6832d93b41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -8761,7 +8761,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 10
+    maxNumParticles: 2
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -16206,8 +16206,8 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c4aac494834130d408c703b6cd7f9687, type: 2}
-  - {fileID: 2100000, guid: c4aac494834130d408c703b6cd7f9687, type: 2}
+  - {fileID: 2100000, guid: 8237ca5da2fe93a40ab5f24204b85841, type: 2}
+  - {fileID: 2100000, guid: 8237ca5da2fe93a40ab5f24204b85841, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16433,7 +16433,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -16811,7 +16811,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 100
+    maxNumParticles: 5
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -19644,8 +19644,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8941177, g: 0.3019608, b: 0.3019608, a: 1}
-        key1: {r: 0.57254905, g: 0.18039216, b: 0.17254902, a: 1}
+        key0: {r: 1, g: 0, b: 0, a: 1}
+        key1: {r: 0.8490566, g: 0.016648166, b: 0, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -25421,10 +25421,10 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8d97c992176f9284bae810429c00920a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -25435,7 +25435,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -26524,6 +26524,8 @@ MonoBehaviour:
   Continue: {fileID: 656531994}
   Options: {fileID: 656531998}
   Exit: {fileID: 656531997}
+  SmallClick: {fileID: 0}
+  AudioSource: {fileID: 0}
 --- !u!114 &1331518822
 MonoBehaviour:
   m_ObjectHideFlags: 0

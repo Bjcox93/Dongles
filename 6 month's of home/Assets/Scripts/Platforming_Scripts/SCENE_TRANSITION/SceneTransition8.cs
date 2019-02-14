@@ -7,7 +7,7 @@ public class SceneTransition8 : MonoBehaviour {
 
     public AudioClip EndBoop1;
 
-    public string nextLevel = "Title_Splash_Screen";
+    public string nextLevel = "Title_Menu";
 
     //Scene transition
     public float waitTime = 3;
@@ -70,7 +70,7 @@ public class SceneTransition8 : MonoBehaviour {
 
         //GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Title_Splash_Screen");
+        SceneManager.LoadScene("Title_Menu");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
         EndLevel8 = false;
         GameManager.instance.currentLevel = nextLevel;
