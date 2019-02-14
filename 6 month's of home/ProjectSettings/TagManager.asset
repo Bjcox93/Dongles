@@ -26,6 +26,7 @@ TagManager:
   - ContinueBlock
   - OptionsBlock
   - ExitBlock
+  - Ring
   layers:
   - Default
   - TransparentFX

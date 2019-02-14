@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Screen_Shake : MonoBehaviour
 {
-    [Range(0f, 2f)]
+    [Range(0f, 1.5f)]
     public float Intensity;
 
     public Transform ball;
@@ -48,7 +48,7 @@ public class Screen_Shake : MonoBehaviour
         var startTime = Time.realtimeSinceStartup;
         while (Time.realtimeSinceStartup < startTime + _pendingShakeDuration)
         {
-            var randomPoint = ball.position + new Vector3(0,0, Random.Range(-0.1f, 0.1f) );
+            var randomPoint = ball.position + new Vector3(0,0, Random.Range(-0.08f, 0.08f) );
             _target.localPosition = randomPoint;
             yield return null;
         }

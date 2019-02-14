@@ -21,7 +21,13 @@ public class CameraMovemement : MonoBehaviour {
         }
     }
 
+    //private void Start()
+    //{
+    //    var playerCam
+    //    var ball
 
+    //    var offset = playerCam - ball;
+    //}
 
     private void Update()
     {
@@ -30,9 +36,23 @@ public class CameraMovemement : MonoBehaviour {
             smoothSpeed = 3f;
         }
 
-       
+        if (Movement.instance.playerActive == true)
+        {
+            Vector3 desiredPosition = target.position + offSet;
+
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+            transform.position = smoothedPosition;
+        }
+
+        if (Movement.instance.playerActive == false)
+        {
+            Vector3 desiredPosition = target2.position + offSet;
+
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+            transform.position = smoothedPosition;
+        }
     }
-    void LateUpdate()
+    /*void LateUpdate()
     {
         if (Movement.instance.playerActive == true) {
             Vector3 desiredPosition = target.position + offSet;
@@ -48,5 +68,5 @@ public class CameraMovemement : MonoBehaviour {
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
             transform.position = smoothedPosition;
         }
-    }
+    }*/
 }

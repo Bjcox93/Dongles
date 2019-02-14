@@ -11,10 +11,12 @@ public class Mouse_Hover : MonoBehaviour {
     public GameObject Exit;
     public AudioClip SmallClick;
     public AudioSource AudioSource;
+    
 
 
     public void Update()
     {
+        
         int layerMask = 1 << 9;
         RaycastHit hit;
         AudioSource = GetComponent<AudioSource>();
@@ -45,7 +47,12 @@ public class Mouse_Hover : MonoBehaviour {
                 rend3.material.color = Color.white;
                 rend4.material.color = Color.white;
                 rend5.material.color = Color.red;
-                AudioSource.PlayOneShot(SmallClick, 0.5f);
+                
+
+                if (!AudioSource.isPlaying) {
+                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+                    
+                }
             }
 
             if (hit.transform.tag == "ContinueBlock")
@@ -55,7 +62,11 @@ public class Mouse_Hover : MonoBehaviour {
                 rend2.material.color = Color.red;
                 rend4.material.color = Color.white;
                 rend5.material.color = Color.red;
-                AudioSource.PlayOneShot(SmallClick, 0.5f);
+                if (!AudioSource.isPlaying)
+                {
+                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+
+                }
             }
 
             if (hit.transform.tag == "OptionsBlock")
@@ -65,7 +76,11 @@ public class Mouse_Hover : MonoBehaviour {
                 rend2.material.color = Color.red;
                 rend3.material.color = Color.white;
                 rend5.material.color = Color.red;
-                AudioSource.PlayOneShot(SmallClick, 0.5f);
+                if (!AudioSource.isPlaying)
+                {
+                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+
+                }
             }
 
             if (hit.transform.tag == "ExitBlock")
@@ -75,7 +90,10 @@ public class Mouse_Hover : MonoBehaviour {
                 rend2.material.color = Color.red;
                 rend3.material.color = Color.white;
                 rend4.material.color = Color.white;
-                AudioSource.PlayOneShot(SmallClick, 0.5f);
+                if (!AudioSource.isPlaying) {
+                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+                    
+                }
             }
             /* if (hit.transform.tag != "StartBlock")
              {
