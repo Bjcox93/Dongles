@@ -1040,12 +1040,18 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 66fba0a03096b3c4a87f591853117bec, type: 3}
+      objectReference: {fileID: 8300000, guid: be05ecaf8cb6ebf458e891b7f36abaa6, type: 3}
     - target: {fileID: 82029847864604172, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: BypassListenerEffects
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82029847864604172, guid: c00b89a1c825cc24387ed09a5ea3693d,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243175992349783574, guid: f4234558e00dff8438cffa89acc07000,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c00b89a1c825cc24387ed09a5ea3693d, type: 2}
   m_IsPrefabParent: 0
