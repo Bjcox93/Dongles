@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42643332, g: 0.45915014, b: 0.4859199, a: 1}
+  m_IndirectSpecularColor: {r: 0.42643362, g: 0.45915025, b: 0.4859202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -257,6 +257,36 @@ Prefab:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 1331518815}
+    - target: {fileID: 328083449365956988, guid: 1efde39462c096c46a8b69f2a9b2d47b,
+        type: 2}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 0c2f912d979f8c748b3d6e2fecf3c031,
+        type: 3}
+    - target: {fileID: 4003474732524050, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003474732524050, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003474732524050, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451442397958052, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451442397958052, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451442397958052, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
   m_IsPrefabParent: 0
