@@ -117,6 +117,20 @@ NavMeshSettings:
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
   m_PrefabInternal: {fileID: 616339273}
+--- !u!64 &68421147
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68421143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
 --- !u!1 &194265148
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +555,6 @@ GameObject:
   - component: {fileID: 318849457}
   - component: {fileID: 318849456}
   - component: {fileID: 318849455}
-  - component: {fileID: 318849454}
   - component: {fileID: 318849460}
   - component: {fileID: 318849459}
   - component: {fileID: 318849458}
@@ -572,67 +585,6 @@ RectTransform:
   m_AnchoredPosition: {x: 33, y: -5.7}
   m_SizeDelta: {x: 800, y: 416.68405}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &318849454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114181953112860174, guid: 306f7482b08bd5849843527d43e50c51,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 318849452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec2c308912ff344b861c55815b216b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 194265148}
-  TutorialObject: {fileID: 0}
-  ContinueNewGO: {fileID: 0}
-  TargetContinue_Start: {fileID: 0}
-  TargetContinue_End: {fileID: 0}
-  ButtonContinueNewGO: {fileID: 0}
-  ButtonTargetContinue_Start: {fileID: 0}
-  ButtonTargetContinue_End: {fileID: 0}
-  ResumeNewGO: {fileID: 0}
-  TargetResume_Start: {fileID: 0}
-  TargetResume_End: {fileID: 0}
-  ButtonResumeNewGO: {fileID: 0}
-  ButtonTargetResume_Start: {fileID: 0}
-  ButtonTargetResume_End: {fileID: 0}
-  MenuNewGO: {fileID: 0}
-  TargetMenu_Start: {fileID: 0}
-  TargetMenu_End: {fileID: 0}
-  ButtonMenuNewGO: {fileID: 0}
-  ButtonTargetMenu_Start: {fileID: 0}
-  ButtonTargetMenu_End: {fileID: 0}
-  SpeedOfMove: 0
-  LerpContinue: 0
-  LerpResume: 0
-  LerpMenu: 0
-  waitTime: 3
-  buttonAnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &318849455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,15 +1008,15 @@ Prefab:
     - target: {fileID: 2300010, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 616ee845c2f89af409d417f39206903e, type: 2}
+      objectReference: {fileID: 2100000, guid: d997bd0dcc89ba24091522694502936d, type: 2}
     - target: {fileID: 2300002, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 27b59bc385c67e64eb10a34d8fb81f7b, type: 2}
+      objectReference: {fileID: 2100000, guid: cf551498221b92548baaa3b9738ad60e, type: 2}
     - target: {fileID: 2300000, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 27b59bc385c67e64eb10a34d8fb81f7b, type: 2}
+      objectReference: {fileID: 2100000, guid: cf551498221b92548baaa3b9738ad60e, type: 2}
     - target: {fileID: 2300008, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1115,7 +1067,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_TagString
-      value: StartBlock
+      value: ExitBlock
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_Layer
@@ -1123,7 +1075,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
       propertyPath: m_TagString
-      value: ExitBlock
+      value: StartBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_TagString
+      value: OptionsBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_TagString
+      value: ContinueBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
@@ -1326,6 +1298,20 @@ CanvasRenderer:
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
   m_PrefabInternal: {fileID: 616339273}
+--- !u!64 &804154975
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 804154971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
 --- !u!1 &1094327461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,10 +1750,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0df82006dec114cbfb7763705498b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Start: {fileID: 616339276}
+  Start: {fileID: 804154971}
   Continue: {fileID: 68421143}
   Options: {fileID: 1843271184}
-  Exit: {fileID: 804154971}
+  Exit: {fileID: 616339276}
   SmallClick: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
   AudioSource: {fileID: 1331518819}
 --- !u!114 &1331518818
@@ -2414,6 +2400,20 @@ CanvasRenderer:
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
   m_PrefabInternal: {fileID: 616339273}
+--- !u!64 &1843271188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843271184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: de0924dab5430e346bb527b8673c0c33, type: 3}
 --- !u!1 &1844561798
 GameObject:
   m_ObjectHideFlags: 0
