@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4477281, g: 0.4977048, b: 0.57540387, a: 1}
+  m_IndirectSpecularColor: {r: 0.44772756, g: 0.4977042, b: 0.5754031, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14665,12 +14665,12 @@ Prefab:
     - target: {fileID: 65859803272111098, guid: a264a7b9868b72443a5e5deb149dd48a,
         type: 2}
       propertyPath: m_Size.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 65859803272111098, guid: a264a7b9868b72443a5e5deb149dd48a,
         type: 2}
       propertyPath: m_Size.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4767744583968770, guid: a264a7b9868b72443a5e5deb149dd48a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14718,7 +14718,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4767744583968770, guid: a264a7b9868b72443a5e5deb149dd48a, type: 2}
       propertyPath: m_LocalScale.x
-      value: 7.689498
+      value: 8.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797197270356394, guid: a264a7b9868b72443a5e5deb149dd48a, type: 2}
+      propertyPath: m_TagString
+      value: FloorTriggerKiller
+      objectReference: {fileID: 0}
+    - target: {fileID: 65859803272111098, guid: a264a7b9868b72443a5e5deb149dd48a,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a264a7b9868b72443a5e5deb149dd48a, type: 2}
