@@ -31,17 +31,19 @@ public class Screen_Shake : MonoBehaviour
 
     public void Update()
     {
+        _initialPos = _target.localPosition;
         if (_pendingShakeDuration > 0 && !_isShaking)
         {
             StartCoroutine(DoShake());
         }
+        
     }
 
     IEnumerator DoShake()
     {
         _isShaking = true;
 
-        _initialPos = _target.localPosition;
+        //_initialPos = _target.localPosition;
         print(_initialPos);
         //Debug.Break();
 
