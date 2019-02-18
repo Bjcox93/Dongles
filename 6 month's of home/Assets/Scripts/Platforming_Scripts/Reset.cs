@@ -75,7 +75,7 @@ public class Reset : MonoBehaviour {
 
         scoreText.text = scoreAmount.ToString();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(1))
         {
             if(SceneTrans0 != null && !SceneTrans0.EndLevel0 || SceneTrans1 != null && !SceneTrans1.EndLevel1 || SceneTrans2 != null && !SceneTrans2.EndLevel2 || 
                 SceneTrans3 != null && !SceneTrans3.EndLevel3 || SceneTrans4 != null && !SceneTrans4.EndLevel4 || SceneTrans6 != null && !SceneTrans6.EndLevel6 ||
@@ -96,7 +96,7 @@ public class Reset : MonoBehaviour {
         }
 
         //TutorialNotesCont
-        if (Input.GetKeyDown(KeyCode.B) && GameManager.instance.tutorialUI == true)
+        if (Input.GetMouseButtonDown(0) && GameManager.instance.tutorialUI == true)
         {
             press_b.SetActive(false);
             press_space.SetActive(true);

@@ -38,7 +38,7 @@ public class CannonRotate2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetMouseButtonDown(0))
         {
             if (cannonRotate_2 != null) { StopCoroutine(cannonRotate_2); }
             cannonRotate_1 = StartCoroutine(LerpDistance(BridgeObject2.transform, BridgeObjectShadow2.transform.position, BridgeObjectShadow2.transform.localScale, BridgeObjectShadow2.transform.rotation, 0.8f));
@@ -47,7 +47,7 @@ public class CannonRotate2 : MonoBehaviour {
             BridgeObject2.transform.localScale = BridgeObjectShadow2.transform.localScale;*/
         }
 
-        else if (Input.GetKeyUp(KeyCode.B))
+        else if (Input.GetMouseButtonUp(0))
         {
             if (cannonRotate_1 != null) { StopCoroutine(cannonRotate_1); }
             cannonRotate_2 = StartCoroutine(LerpDistance(BridgeObject2.transform, OriginalPos.transform.position, OriginalPos.transform.localScale, OriginalPos.transform.rotation, 0.8f));
