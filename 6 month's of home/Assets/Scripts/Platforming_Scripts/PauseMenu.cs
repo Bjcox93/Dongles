@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour {
         LerpContinue = false;
         LerpMenu = false;
         LerpResume = false;
+
 	}
 	
 	// Update is called once per frame
@@ -166,6 +167,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Pause()
     {
+        
         //LerpResume = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
