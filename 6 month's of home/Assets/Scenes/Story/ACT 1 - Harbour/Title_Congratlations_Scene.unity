@@ -261,7 +261,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 080c7ecfdd458fa4ab4fc33f567f864c,
+      objectReference: {fileID: 32900000, guid: d033be8b358ae384fbf13ca49610ef84,
         type: 3}
     - target: {fileID: 4003474732524050, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
       propertyPath: m_LocalScale.x
@@ -920,7 +920,7 @@ Transform:
   m_GameObject: {fileID: 1711291243}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -0.19999984, y: -0.099998474, z: 9.310002}
-  m_LocalScale: {x: 2.0814555, y: 0.9167924, z: 1.2264405}
+  m_LocalScale: {x: 2.247972, y: 0.99013585, z: 1.3245559}
   m_Children: []
   m_Father: {fileID: 1331518816}
   m_RootOrder: 0
@@ -954,7 +954,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 20a49a4f796813d4bafada00fcffd0b6, type: 2}
+  - {fileID: 2100000, guid: 606cabc23a610874d889de487950b9fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
