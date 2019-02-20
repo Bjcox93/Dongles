@@ -130,7 +130,9 @@ public class PauseMenu : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        ResumeNewGO.transform.position = TargetResume_Start.transform.position;
+        ButtonResumeNewGO.transform.position = ButtonTargetResume_Start.transform.position;
+       Time.timeScale = 1f;
         GameIsPaused = false;
         Debug.Log("resume");
     }
