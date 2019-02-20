@@ -18,6 +18,8 @@ public class OptionsMenu1 : MonoBehaviour {
     public Transform ButtonTargetMenu_Start;
     public Transform ButtonTargetMenu_End;
 
+    public Animator animator;
+
     public float SpeedOfMove;
 
     //Lerp Bools
@@ -49,6 +51,7 @@ public class OptionsMenu1 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
+            FadeOut();
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);
             ButtonMenuNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, progression);
@@ -102,5 +105,10 @@ public class OptionsMenu1 : MonoBehaviour {
     public void Level5()
     {
         SceneManager.LoadScene("LEVEL_5");
+    }
+
+    public void FadeOut()
+    {
+        animator.SetTrigger("FadeIn");
     }
 }

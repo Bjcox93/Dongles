@@ -36,6 +36,8 @@ public class SceneTransition15 : MonoBehaviour {
 
     public GameObject ParticalGrp;
 
+    public Animator animator;
+
     //-------------------------
     public bool EndLevel15;
 
@@ -59,6 +61,7 @@ public class SceneTransition15 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
+            FadeOut();
             ParticalGrp.SetActive(true);
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
@@ -96,5 +99,10 @@ public class SceneTransition15 : MonoBehaviour {
             EndLevel15 = true;
 
         }
+    }
+
+    public void FadeOut()
+    {
+        animator.SetTrigger("FadeIn");
     }
 }

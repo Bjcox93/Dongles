@@ -44,6 +44,8 @@ public class MainMenu1 : MonoBehaviour {
     public bool LerpOptions;
     public bool LerpExit;
 
+    public Animator animator;
+
     //Lerp
     //Time for animaitons
     public float waitTime = 3;
@@ -121,6 +123,7 @@ public class MainMenu1 : MonoBehaviour {
 
     public void StartNew()
     {
+        FadeOut();
         StartCoroutine(WaitForStartButton());
     }
 
@@ -166,12 +169,13 @@ public class MainMenu1 : MonoBehaviour {
 
     public void OptionsMenu()
     {
+        FadeOut();
         StartCoroutine(WaitForOptionsButton());
     }
 
     public void LoadLevelLoadMenu()
     {
-
+        FadeOut();
         SceneManager.LoadScene("Title_Menu_LOAD_LEVEL");
     }
 
@@ -182,6 +186,7 @@ public class MainMenu1 : MonoBehaviour {
 
     public void QuitGame()
     {
+        FadeOut();
         StartCoroutine(WaitForQuitButton());
 
     }
@@ -201,6 +206,11 @@ public class MainMenu1 : MonoBehaviour {
     {
         
         ExitBool = true;
+    }
+
+    public void FadeOut()
+    {
+        animator.SetTrigger("FadeIn");
     }
 
 }

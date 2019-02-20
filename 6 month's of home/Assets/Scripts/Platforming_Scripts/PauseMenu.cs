@@ -44,6 +44,7 @@ public class PauseMenu : MonoBehaviour {
     public bool LerpResume;
     public bool LerpMenu;
 
+
     //Coroutine Stuff:
     public float waitTime = 3;
     public AnimationCurve buttonAnimationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
