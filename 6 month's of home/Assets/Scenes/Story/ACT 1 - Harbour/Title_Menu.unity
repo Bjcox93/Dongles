@@ -1691,7 +1691,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  BigClick: {fileID: 8300000, guid: f6a358bb0a62c1e49be550a2bad115c2, type: 3}
+  BigClick: {fileID: 8300000, guid: d96fad14104824c439c495c16df9e620, type: 3}
   AudioSource: {fileID: 1331518820}
 --- !u!114 &1162882164
 MonoBehaviour:
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   Continue: {fileID: 1876275399}
   Options: {fileID: 1605300739}
   Exit: {fileID: 349130}
-  SmallClick: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  SmallClick: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   AudioSource: {fileID: 1331518820}
 --- !u!114 &1331518818
 MonoBehaviour:
@@ -2470,7 +2470,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f6a358bb0a62c1e49be550a2bad115c2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d96fad14104824c439c495c16df9e620, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2566,7 +2566,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
