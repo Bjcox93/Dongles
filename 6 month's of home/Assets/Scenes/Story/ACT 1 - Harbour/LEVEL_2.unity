@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514311, g: 0.500732, b: 0.5713047, a: 1}
+  m_IndirectSpecularColor: {r: 0.45143157, g: 0.50073254, b: 0.5713059, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24766,12 +24766,43 @@ Prefab:
     - target: {fileID: 224734558967229490, guid: 7435180833fe5344aa463c6500ac8447,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224685080575613996, guid: 7435180833fe5344aa463c6500ac8447,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224299031613096034, guid: 7435180833fe5344aa463c6500ac8447,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224299031613096034, guid: 7435180833fe5344aa463c6500ac8447,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 267
+      objectReference: {fileID: 0}
+    - target: {fileID: 224299031613096034, guid: 7435180833fe5344aa463c6500ac8447,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405403121632164, guid: 7435180833fe5344aa463c6500ac8447, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.010530516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405403121632164, guid: 7435180833fe5344aa463c6500ac8447, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.00006509848
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405403121632164, guid: 7435180833fe5344aa463c6500ac8447, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.01620164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232277422896396, guid: 7435180833fe5344aa463c6500ac8447, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7435180833fe5344aa463c6500ac8447, type: 2}
@@ -28293,7 +28324,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5700dc38ff891bc4aa11b301fd9ddc1c, type: 2}
+  - {fileID: 2100000, guid: e7be609f322b438459aa851203156061, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39570,7 +39601,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 36dd581ef317ffd4ebaa0999352280df, type: 2}
+  - {fileID: 2100000, guid: e7009305ccb970542a79b6d35f91277a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
