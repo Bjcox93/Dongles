@@ -18,6 +18,9 @@ public class OptionsMenu1 : MonoBehaviour {
     public Transform ButtonTargetMenu_Start;
     public Transform ButtonTargetMenu_End;
 
+    public AudioClip Whoop;
+    public AudioSource AudioSource;
+
     public Animator animator;
 
     public float SpeedOfMove;
@@ -39,6 +42,7 @@ public class OptionsMenu1 : MonoBehaviour {
     // Update is called once per frame
     public void Update()
     {
+        AudioSource = GetComponent<AudioSource>();
         if (LerpMenu == true)
         {
             MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, SpeedOfMove * Time.deltaTime);
@@ -51,6 +55,7 @@ public class OptionsMenu1 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
+            AudioSource.PlayOneShot(Whoop, 0.5f);
             FadeOut();
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);
