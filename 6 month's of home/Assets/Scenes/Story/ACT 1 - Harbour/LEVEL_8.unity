@@ -11039,6 +11039,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 23279088891091310, guid: cc8434db746610f498547242e8c0723c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 40.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472418546634396, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
   m_IsPrefabParent: 0
@@ -16721,7 +16734,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 0.66
   Loop: 0
