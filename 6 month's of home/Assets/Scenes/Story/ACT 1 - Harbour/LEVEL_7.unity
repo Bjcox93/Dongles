@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465297, g: 0.4963597, b: 0.5747902, a: 1}
+  m_IndirectSpecularColor: {r: 0.44653052, g: 0.4963603, b: 0.57479155, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5153,6 +5153,48 @@ Transform:
   m_Father: {fileID: 1518106258}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!1001 &443035135
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 23.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 43.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &447887783 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4116471177951238, guid: 39e8ce0d803d75d418d59f78ae9666d3,
@@ -15879,7 +15921,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 0.66
@@ -16005,7 +16047,7 @@ MonoBehaviour:
   Continue: {fileID: 1320940088}
   Options: {fileID: 1320940087}
   Exit: {fileID: 1320940086}
-  SmallClick: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  SmallClick: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   AudioSource: {fileID: 1331518821}
 --- !u!1 &1334721442
 GameObject:
@@ -21106,6 +21148,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.52156866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684119640752010, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}

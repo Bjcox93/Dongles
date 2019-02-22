@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465297, g: 0.4963597, b: 0.5747902, a: 1}
+  m_IndirectSpecularColor: {r: 0.44653052, g: 0.4963603, b: 0.57479155, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4024,73 +4024,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322985849}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &324328974
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 35.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 25.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 42.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4358725367177458, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 198230178973877190, guid: 983837d2761493a4e9f951b65ae446a9,
-        type: 2}
-      propertyPath: CollisionModule.plane0
-      value: 
-      objectReference: {fileID: 877005639}
-    - target: {fileID: 198230178973877190, guid: 983837d2761493a4e9f951b65ae446a9,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.9843138
-      objectReference: {fileID: 0}
-    - target: {fileID: 198230178973877190, guid: 983837d2761493a4e9f951b65ae446a9,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.29411766
-      objectReference: {fileID: 0}
-    - target: {fileID: 198230178973877190, guid: 983837d2761493a4e9f951b65ae446a9,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.49803925
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 983837d2761493a4e9f951b65ae446a9, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &324328975 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1684119640752010, guid: 983837d2761493a4e9f951b65ae446a9,
-    type: 2}
-  m_PrefabInternal: {fileID: 324328974}
 --- !u!1 &325420099
 GameObject:
   m_ObjectHideFlags: 0
@@ -10897,11 +10830,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5366a817b9f1b74089a17a9f6201634, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &877005639 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4580448796270294, guid: a5366a817b9f1b74089a17a9f6201634,
-    type: 2}
-  m_PrefabInternal: {fileID: 877005638}
 --- !u!1 &880712522
 GameObject:
   m_ObjectHideFlags: 0
@@ -11072,6 +11000,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 886108820}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &897927766
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 25.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 43.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &900483985
 GameObject:
   m_ObjectHideFlags: 0
@@ -14932,7 +14902,7 @@ MonoBehaviour:
   BaseLine4: {fileID: 871437901}
   SmallLine4: {fileID: 1083463936}
   BigLine4: {fileID: 1565913768}
-  ParticalGrp: {fileID: 324328975}
+  ParticalGrp: {fileID: 0}
   animator: {fileID: 950839510}
   EndLevel2: 0
 --- !u!114 &1173713592
@@ -16750,7 +16720,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 0.66
@@ -16876,7 +16846,7 @@ MonoBehaviour:
   Continue: {fileID: 950839514}
   Options: {fileID: 950839513}
   Exit: {fileID: 950839512}
-  SmallClick: {fileID: 8300000, guid: 8ab948e613a6f9b44a3d50dddd7ff91d, type: 3}
+  SmallClick: {fileID: 8300000, guid: 9afc176a419905841907e30acb27bab2, type: 3}
   AudioSource: {fileID: 1331518821}
 --- !u!1 &1334721442
 GameObject:
