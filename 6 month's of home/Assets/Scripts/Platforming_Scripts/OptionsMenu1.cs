@@ -34,9 +34,12 @@ public class OptionsMenu1 : MonoBehaviour {
     // Time when the movement started.
     private float startTime;
 
+    public bool TransitionSoundPlaying;
+
     // Use this for initialization
     void Start () {
         LerpMenu = false;
+        TransitionSoundPlaying = false;
 	}
 
     // Update is called once per frame
@@ -53,14 +56,19 @@ public class OptionsMenu1 : MonoBehaviour {
 
     IEnumerator WaitForOptionsMenuButton()
     {
+        TransitionSoundPlaying = true;
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
-            AudioSource.PlayOneShot(Whoop, 0.5f);
+            if (TransitionSoundPlaying == true) {
+                AudioSource.PlayOneShot(Whoop, 0.5f);
+            }
             FadeOut();
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);
             ButtonMenuNewGO.transform.position = Vector3.Lerp(ButtonTargetMenu_Start.transform.position, ButtonTargetMenu_End.transform.position, progression);
             yield return new WaitForEndOfFrame();
+
+            TransitionSoundPlaying = false;
         }
         SceneManager.LoadScene("Title_Menu");
     }
