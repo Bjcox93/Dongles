@@ -22,6 +22,7 @@ public class Camera_ShowPuzzle : MonoBehaviour
         Camera.GetComponent<CameraMovemement>().enabled = false;
         Camera.GetComponent<Camera_ShowPuzzle>().enabled = true;
         turnONCamera = false;
+        Debug.Log("Flag3");
     }
 
    
@@ -33,12 +34,15 @@ public class Camera_ShowPuzzle : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, CameraDestination1.position, step);
         turnONCamera = true;
+        Debug.Log("Flag2");
 
 
         if (turnONCamera == true)
         {
             Camera.GetComponent<CameraMovemement>().enabled = true;
             Camera.GetComponent<Camera_ShowPuzzle>().enabled = false;
+
+            Debug.Log("Flag1");
         }
 
 

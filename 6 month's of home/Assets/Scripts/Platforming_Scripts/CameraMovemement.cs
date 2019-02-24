@@ -11,6 +11,8 @@ public class CameraMovemement : MonoBehaviour {
 
     public Vector3 offSet;
 
+    public bool PauseBlock; 
+
     private void Awake()
     {
         if (instance != null) { Debug.Log("Badthing3"); }
@@ -19,6 +21,8 @@ public class CameraMovemement : MonoBehaviour {
         {
             instance = this;
         }
+
+        PauseBlock = false;
     }
 
     //private void Start()
@@ -38,18 +42,23 @@ public class CameraMovemement : MonoBehaviour {
 
         if (Movement.instance.playerActive == true)
         {
+            PauseBlock = true;
             Vector3 desiredPosition = target.position + offSet;
 
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
             transform.position = smoothedPosition;
+            PauseBlock = false;
+            
         }
 
         if (Movement.instance.playerActive == false)
         {
+            PauseBlock = true;
             Vector3 desiredPosition = target2.position + offSet;
 
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
             transform.position = smoothedPosition;
+            PauseBlock = false;
         }
     }
     /*void LateUpdate()
