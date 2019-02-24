@@ -31,7 +31,7 @@ public class SceneTransition16 : MonoBehaviour {
     public GameObject SmallLine4;
     public GameObject BigLine4;
 
-    public GameObject ParticalGrp;
+
 
     public Animator animator;
 
@@ -44,7 +44,7 @@ public class SceneTransition16 : MonoBehaviour {
         Reset.instance.SceneTrans16 = this;
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = EndBoop1;
-        ParticalGrp.SetActive(false);
+        
         EndLevel16 = false;
     }
 

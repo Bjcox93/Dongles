@@ -3594,7 +3594,7 @@ Prefab:
     - target: {fileID: 23279088891091310, guid: cc8434db746610f498547242e8c0723c,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3602,7 +3602,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1472418546634396, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
@@ -9772,7 +9772,8 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114400229517954774, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &806788968
@@ -14696,7 +14697,6 @@ MonoBehaviour:
   BaseLine4: {fileID: 528365835}
   SmallLine4: {fileID: 528365834}
   BigLine4: {fileID: 140578671}
-  ParticalGrp: {fileID: 0}
   animator: {fileID: 1930244560}
   EndLevel16: 0
 --- !u!114 &1173713592
