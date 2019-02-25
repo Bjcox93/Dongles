@@ -261,7 +261,7 @@ Prefab:
         type: 2}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: d033be8b358ae384fbf13ca49610ef84,
+      objectReference: {fileID: 32900000, guid: c04090614e1ff254fb39753a98e77950,
         type: 3}
     - target: {fileID: 4003474732524050, guid: 1efde39462c096c46a8b69f2a9b2d47b, type: 2}
       propertyPath: m_LocalScale.x
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a063bf67b3946f4da8947e0f0fa9ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timek: 4
+  timek: 5
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
