@@ -60,7 +60,7 @@ public class OptionsMenu1 : MonoBehaviour {
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             if (TransitionSoundPlaying == true) {
-                AudioSource.PlayOneShot(Whoop, 0.5f);
+                AudioSource.PlayOneShot(Whoop, Audio_On_Collision.sfxVolume);
             }
             FadeOut();
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);

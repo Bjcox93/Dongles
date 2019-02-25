@@ -129,7 +129,7 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForStartButton()
     {
-        AudioSource.PlayOneShot(BigClick, 0.5f);
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
@@ -142,7 +142,7 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForOptionsButton()
     {
-        AudioSource.PlayOneShot(BigClick, 0.5f);
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
@@ -155,7 +155,7 @@ public class MainMenu1 : MonoBehaviour {
 
     IEnumerator WaitForQuitButton()
     {
-        AudioSource.PlayOneShot(BigClick, 0.5f);
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
         for (float t = 0; t < waitTime; t += Time.deltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);

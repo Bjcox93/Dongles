@@ -56,7 +56,7 @@ public class Mouse_Hover : MonoBehaviour {
 
 
                 if (!AudioSource.isPlaying && currentblock != hit.transform.tag) {
-                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+                    AudioSource.PlayOneShot(SmallClick, Audio_On_Collision.sfxVolume);
 
                 }
                 currentblock = hit.transform.tag;
@@ -72,7 +72,7 @@ public class Mouse_Hover : MonoBehaviour {
 
                 if (!AudioSource.isPlaying && currentblock != hit.transform.tag)
                 {
-                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+                    AudioSource.PlayOneShot(SmallClick, Audio_On_Collision.sfxVolume);
 
                 }
                 currentblock = hit.transform.tag;
@@ -87,7 +87,7 @@ public class Mouse_Hover : MonoBehaviour {
                 rend5.material.color = Color.red;
                 if (!AudioSource.isPlaying && currentblock != hit.transform.tag)
                 {
-                    AudioSource.PlayOneShot(SmallClick, 0.5f);
+                    AudioSource.PlayOneShot(SmallClick, Audio_On_Collision.sfxVolume);
 
                 }
                 currentblock = hit.transform.tag;
@@ -101,7 +101,7 @@ public class Mouse_Hover : MonoBehaviour {
                 rend3.material.color = Color.white;
                 rend4.material.color = Color.white;
                 if (!AudioSource.isPlaying && currentblock != hit.transform.tag) {
-                    AudioSource.PlayOneShot(SmallClick, 0.5f );
+                    AudioSource.PlayOneShot(SmallClick, Audio_On_Collision.sfxVolume);
 
                 }
                 currentblock = hit.transform.tag;

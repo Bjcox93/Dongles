@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class Audio_On_Collision : MonoBehaviour {
 
+   public static Audio_On_Collision instance;
+
+   public void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.Log("Badthing2");
+        }
+
+        else
+        {
+            instance = this;
+        }
+
+    }
+
     // Use this for initialization
     public AudioClip Boop;    // Add your Audi Clip Here;
                               // This Will Configure the  AudioSource Component; 
