@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42390004, g: 0.45522904, b: 0.47889024, a: 1}
+  m_IndirectSpecularColor: {r: 0.42389998, g: 0.45522982, b: 0.47889054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1895,7 +1895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 39
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1917,6 +1917,26 @@ Prefab:
     - target: {fileID: 4128022607568274, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.0020735576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 17.060398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 17.060373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472418546634396, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
@@ -17733,6 +17753,7 @@ MonoBehaviour:
   target2: {fileID: 0}
   smoothSpeed: 10
   offSet: {x: 45, y: 2, z: 0}
+  PauseBlock: 0
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
