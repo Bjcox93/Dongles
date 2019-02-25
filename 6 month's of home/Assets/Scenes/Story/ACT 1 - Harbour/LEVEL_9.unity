@@ -18295,6 +18295,7 @@ MonoBehaviour:
   target2: {fileID: 0}
   smoothSpeed: 10
   offSet: {x: 50, y: 2, z: 0}
+  PauseBlock: 0
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26923,11 +26924,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 31.2
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4128022607568274, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalScale.x
@@ -26940,6 +26941,22 @@ Prefab:
     - target: {fileID: 4128022607568274, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalScale.z
       value: -0.00072133815
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 14.674617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 14.674622
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 14.674599
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}

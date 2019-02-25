@@ -74,7 +74,7 @@ public class SceneTransition : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_3");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
-        EndLevel0 = false;
+        EndLevel0 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);

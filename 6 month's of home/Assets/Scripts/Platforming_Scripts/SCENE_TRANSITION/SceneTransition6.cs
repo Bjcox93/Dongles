@@ -36,6 +36,8 @@ public class SceneTransition6 : MonoBehaviour {
 
     public Animator animator;
 
+
+
     //------------------------
     public bool EndLevel6;
 
@@ -75,7 +77,7 @@ public class SceneTransition6 : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_10");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
-        EndLevel6 = false;
+        EndLevel6 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);

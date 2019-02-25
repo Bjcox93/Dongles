@@ -3598,11 +3598,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.7
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1472418546634396, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 15.380988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 15.380993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 15.380969
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
@@ -16234,6 +16250,7 @@ MonoBehaviour:
   target2: {fileID: 0}
   smoothSpeed: 10
   offSet: {x: 35, y: 2, z: 0}
+  PauseBlock: 0
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0

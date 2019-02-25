@@ -70,16 +70,18 @@ public class SceneTransition4 : MonoBehaviour {
             BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
             yield return new WaitForEndOfFrame();
             GetComponent<AudioSource>().Play();
+
         }
 
         //GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_9");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
-        EndLevel4 = false;
+        EndLevel4 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+
     }
 
     private void OnTriggerEnter(Collider other)

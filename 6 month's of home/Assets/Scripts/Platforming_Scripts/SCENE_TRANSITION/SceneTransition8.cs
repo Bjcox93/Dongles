@@ -80,7 +80,7 @@ public class SceneTransition8 : MonoBehaviour {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Title_Menu");
         Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
-        EndLevel8 = false;
+        EndLevel8 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);

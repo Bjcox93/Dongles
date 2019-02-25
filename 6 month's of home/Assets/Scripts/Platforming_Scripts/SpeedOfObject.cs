@@ -34,7 +34,7 @@ public class SpeedOfObject : MonoBehaviour {
                 {
                     Debug.Log("Freeze");
                     Reset.instance.ResetFun();
-                    timeO = 2.0f;
+                    timeO = 5.0f;
                 }
             }
 
