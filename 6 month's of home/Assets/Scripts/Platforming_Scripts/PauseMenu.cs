@@ -36,6 +36,9 @@ public class PauseMenu : MonoBehaviour {
     public Transform ButtonTargetMenu_Start;
     public Transform ButtonTargetMenu_End;
 
+    public AudioClip BigClick;
+    public AudioSource AudioSource;
+
 
     public float SpeedOfMove;
 
@@ -57,8 +60,8 @@ public class PauseMenu : MonoBehaviour {
         LerpContinue = false;
         LerpMenu = false;
         LerpResume = false;
-
-	}
+        AudioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -141,8 +144,10 @@ public class PauseMenu : MonoBehaviour {
     IEnumerator WaitForMenuButton()
     {
         Debug.Log("menu");
-        Debug.Log(Time.deltaTime)
-;        for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
+        Debug.Log(Time.deltaTime);
+
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
+        for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             MenuNewGO.transform.position = Vector3.Lerp(TargetMenu_Start.transform.position, TargetMenu_End.transform.position, progression);

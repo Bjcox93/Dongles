@@ -10400,16 +10400,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 223860544100478476, guid: ec943d4540abff54987f97dce325553f,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1331518815}
-    - target: {fileID: 114972889386621066, guid: ec943d4540abff54987f97dce325553f,
-        type: 2}
-      propertyPath: TutorialObject
-      value: 
-      objectReference: {fileID: 672108952}
     - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
         type: 2}
       propertyPath: TutorialNotes
@@ -10425,6 +10415,16 @@ Prefab:
       propertyPath: press_space
       value: 
       objectReference: {fileID: 1436449442}
+    - target: {fileID: 114972889386621066, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: TutorialObject
+      value: 
+      objectReference: {fileID: 672108952}
+    - target: {fileID: 223860544100478476, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1331518815}
     - target: {fileID: 1649362400331084, guid: ec943d4540abff54987f97dce325553f, type: 2}
       propertyPath: m_Name
       value: Canvas 1
@@ -12557,6 +12557,7 @@ MonoBehaviour:
   target2: {fileID: 0}
   smoothSpeed: 10
   offSet: {x: 35, y: 2, z: 0}
+  PauseBlock: 0
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
