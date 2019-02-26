@@ -53,7 +53,7 @@ public class SceneTransition3 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     IEnumerator WaitForSceneTrans()
@@ -80,6 +80,7 @@ public class SceneTransition3 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+        EndLevel3 = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -92,7 +93,7 @@ public class SceneTransition3 : MonoBehaviour {
             GameManager.instance.currentLevel = nextLevel;
             GameManager.instance.SaveGame();
             SceneManager.LoadScene(nextLevel);*/
-
+            EndLevel3 = true;
             //SceneTransition
             Time.timeScale = 0.2f;
             StartCoroutine(WaitForSceneTrans());
@@ -103,6 +104,8 @@ public class SceneTransition3 : MonoBehaviour {
 
     public void FadeOut()
     {
+        EndLevel3 = true;
         animator.SetTrigger("FadeIn");
+        EndLevel3 = true;
     }
 }

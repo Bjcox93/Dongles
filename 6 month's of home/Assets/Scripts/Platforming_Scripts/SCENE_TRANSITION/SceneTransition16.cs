@@ -51,7 +51,7 @@ public class SceneTransition16 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     IEnumerator WaitForSceneTrans()
@@ -70,6 +70,7 @@ public class SceneTransition16 : MonoBehaviour {
             GetComponent<AudioSource>().Play();
         }
 
+        EndLevel16 = true;
         //GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_8");
@@ -78,6 +79,7 @@ public class SceneTransition16 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+        EndLevel16 = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -90,7 +92,7 @@ public class SceneTransition16 : MonoBehaviour {
             GameManager.instance.currentLevel = nextLevel;
             GameManager.instance.SaveGame();
             SceneManager.LoadScene(nextLevel);*/
-
+            EndLevel16 = true;
             //SceneTransition
             Time.timeScale = 0.2f;
             StartCoroutine(WaitForSceneTrans());
@@ -101,6 +103,8 @@ public class SceneTransition16 : MonoBehaviour {
 
     public void FadeOut()
     {
+        EndLevel16 = true;
         animator.SetTrigger("FadeIn");
+        EndLevel16 = true;
     }
 }
