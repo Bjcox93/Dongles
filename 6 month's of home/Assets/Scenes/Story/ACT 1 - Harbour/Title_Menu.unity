@@ -1519,6 +1519,8 @@ MonoBehaviour:
   ButtonMenuNewGO: {fileID: 0}
   ButtonTargetMenu_Start: {fileID: 0}
   ButtonTargetMenu_End: {fileID: 0}
+  BigClick: {fileID: 0}
+  AudioSource: {fileID: 0}
   SpeedOfMove: 1
   LerpContinue: 0
   LerpResume: 0
@@ -1657,14 +1659,22 @@ MonoBehaviour:
   ButtonsStartNewGO: {fileID: 1284541224}
   ButtonsOptionsGO: {fileID: 871823482}
   ButtonsExitGO: {fileID: 484946532}
+  ContinueNewGO: {fileID: 1876275399}
+  TargetContinue_Start: {fileID: 1876275399}
+  TargetContinue_End: {fileID: 1794254536}
+  ButtonContinueNewGO: {fileID: 1873330031}
+  ButtonTargetContinue_Start: {fileID: 1873330031}
+  ButtonTargetContinue_End: {fileID: 1226205751}
   SpeedOfMove: 1
   MainMenuUI: {fileID: 1313121956}
   StartNewWait: 0
   OptionsBool: 0
   ExitBool: 0
+  ContinueBool: 0
   LerpStart: 0
   LerpOptions: 0
   LerpExit: 0
+  LerpContinue: 0
   animator: {fileID: 263521379}
   waitTime: 3
   buttonAnimationCurve:
@@ -3611,8 +3621,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1162882158}
-        m_MethodName: LoadGame
+      - m_Target: {fileID: 1162882163}
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

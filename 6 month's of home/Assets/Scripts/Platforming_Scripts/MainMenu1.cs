@@ -31,6 +31,15 @@ public class MainMenu1 : MonoBehaviour {
     public GameObject ButtonsOptionsGO;
     public GameObject ButtonsExitGO;
 
+    public GameObject ContinueNewGO;
+    public GameObject TargetContinue_Start;
+    public GameObject TargetContinue_End;
+
+    //Continue Buttons:
+    public GameObject ButtonContinueNewGO;
+    public GameObject ButtonTargetContinue_Start;
+    public GameObject ButtonTargetContinue_End;
+
     public float SpeedOfMove;
 
     public GameObject MainMenuUI;
@@ -39,10 +48,12 @@ public class MainMenu1 : MonoBehaviour {
     public bool StartNewWait;
     public bool OptionsBool;
     public bool ExitBool;
+    public bool ContinueBool;
 
     public bool LerpStart;
     public bool LerpOptions;
     public bool LerpExit;
+    public bool LerpContinue;
 
     public Animator animator;
 
@@ -66,9 +77,12 @@ public class MainMenu1 : MonoBehaviour {
         StartNewWait = false;
         OptionsBool = false;
         ExitBool = false;
+        ContinueBool = false;
         LerpStart = false;
         LerpOptions = false;
         LerpExit = false;
+        LerpContinue = false;
+
         AudioSource = GetComponent<AudioSource>();
 
     }
@@ -167,6 +181,19 @@ public class MainMenu1 : MonoBehaviour {
         Application.Quit();
     }
 
+    IEnumerator WaitForContinueButton()
+    {
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
+        for (float t = 0; t < waitTime; t += Time.deltaTime)
+        {
+            float progression = buttonAnimationCurve.Evaluate(t / waitTime);
+            ContinueNewGO.transform.position = Vector3.Lerp(TargetContinue_Start.transform.position, TargetContinue_End.transform.position, progression);
+            ButtonContinueNewGO.transform.position = Vector3.Lerp(ButtonTargetContinue_Start.transform.position, ButtonTargetContinue_End.transform.position, progression);
+            yield return new WaitForEndOfFrame();
+        }
+        GameManager.instance.LoadGame();
+    }
+
     public void OptionsMenu()
     {
         FadeOut();
@@ -191,6 +218,12 @@ public class MainMenu1 : MonoBehaviour {
 
     }
 
+    public void ContinueGame()
+    {
+        FadeOut();
+        StartCoroutine(WaitForContinueButton());
+    }
+
     public void startNewLerp()
     {
         //Trigger end Scene
@@ -206,6 +239,11 @@ public class MainMenu1 : MonoBehaviour {
     {
         
         ExitBool = true;
+    }
+
+    public void ContinueLerp()
+    {
+        ContinueBool = true;
     }
 
     public void FadeOut()
