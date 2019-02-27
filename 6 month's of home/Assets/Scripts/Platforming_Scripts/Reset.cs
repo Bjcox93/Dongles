@@ -43,6 +43,7 @@ public class Reset : MonoBehaviour {
 
             //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
             Destroy(gameObject);
+       
     }
 
     // Use this for initialization
@@ -52,8 +53,8 @@ public class Reset : MonoBehaviour {
         DontDestroyOnLoad(TutorialNotes);
         DontDestroyOnLoad(press_b);
         DontDestroyOnLoad(press_space);
-
         
+
 
         if (GameManager.instance.tutorialUI == true)
         {
