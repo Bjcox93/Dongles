@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44772756, g: 0.4977042, b: 0.5754031, a: 1}
+  m_IndirectSpecularColor: {r: 0.4477281, g: 0.4977048, b: 0.57540387, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13737,7 +13737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4983261158251614, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4983261158251614, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_LocalScale.x
@@ -13873,6 +13873,29 @@ GameObject:
   m_PrefabParentObject: {fileID: 1617520338798176, guid: e5be7d667de4bec4da33b187eb5f828c,
     type: 2}
   m_PrefabInternal: {fileID: 931598064}
+--- !u!1 &931598076 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1751733685705214, guid: e5be7d667de4bec4da33b187eb5f828c,
+    type: 2}
+  m_PrefabInternal: {fileID: 931598064}
+--- !u!95 &931598077
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931598076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63bca7117b412484b86402de7af041ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &936201338
 GameObject:
   m_ObjectHideFlags: 0
@@ -17556,6 +17579,7 @@ MonoBehaviour:
   BigLine4: {fileID: 1625828637}
   ParticalGrp: {fileID: 0}
   animator: {fileID: 1978507980}
+  animator2: {fileID: 931598077}
   EndLevel4: 0
 --- !u!136 &1173713593
 CapsuleCollider:
@@ -29116,7 +29140,7 @@ Prefab:
     - target: {fileID: 224791232100313372, guid: ec943d4540abff54987f97dce325553f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224791232100313372, guid: ec943d4540abff54987f97dce325553f,
         type: 2}

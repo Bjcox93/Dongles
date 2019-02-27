@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514311, g: 0.500732, b: 0.5713047, a: 1}
+  m_IndirectSpecularColor: {r: 0.45143157, g: 0.50073254, b: 0.5713059, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3690,6 +3690,23 @@ Prefab:
     - target: {fileID: 4753862629065182, guid: cc8434db746610f498547242e8c0723c, type: 2}
       propertyPath: m_RootOrder
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472418546634396, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23279088891091310, guid: cc8434db746610f498547242e8c0723c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 27.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173408314083460, guid: cc8434db746610f498547242e8c0723c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc8434db746610f498547242e8c0723c, type: 2}
@@ -9761,6 +9778,29 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224791232100313372, guid: ec943d4540abff54987f97dce325553f,
     type: 2}
   m_PrefabInternal: {fileID: 1074537523}
+--- !u!1 &1014615902 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1751733685705214, guid: e5be7d667de4bec4da33b187eb5f828c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1633078735}
+--- !u!95 &1014615903
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014615902}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63bca7117b412484b86402de7af041ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1017926731 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1740072924301166, guid: e5be7d667de4bec4da33b187eb5f828c,
@@ -10348,7 +10388,7 @@ Prefab:
     - target: {fileID: 224791232100313372, guid: ec943d4540abff54987f97dce325553f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224791232100313372, guid: ec943d4540abff54987f97dce325553f,
         type: 2}
@@ -11395,6 +11435,7 @@ MonoBehaviour:
   BigLine4: {fileID: 1369326467}
   ParticalGrp: {fileID: 0}
   animator: {fileID: 726260746}
+  animator2: {fileID: 1014615903}
   EndLevel1: 0
 --- !u!136 &1173713593
 CapsuleCollider:
@@ -16141,7 +16182,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4983261158251614, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1787480238280772, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_Layer

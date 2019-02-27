@@ -35,7 +35,7 @@ public class SceneTransition8 : MonoBehaviour {
     public GameObject ParticalGrp;
 
     public Animator animator;
-
+    public Animator animator2;
 
 
     //-------------------------
@@ -67,10 +67,10 @@ public class SceneTransition8 : MonoBehaviour {
             //ParticalGrp.SetActive(true);
             //FadeOut();
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
-            BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
-            BaseLine2.transform.position = Vector3.Lerp(SmallLine2.transform.position, BigLine2.transform.position, progression);
-            BaseLine3.transform.position = Vector3.Lerp(SmallLine3.transform.position, BigLine3.transform.position, progression);
-            BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
+            //BaseLine1.transform.position = Vector3.Lerp(SmallLine1.transform.position, BigLine1.transform.position, progression);
+            //BaseLine2.transform.position = Vector3.Lerp(SmallLine2.transform.position, BigLine2.transform.position, progression);
+            //BaseLine3.transform.position = Vector3.Lerp(SmallLine3.transform.position, BigLine3.transform.position, progression);
+            //BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
             yield return new WaitForEndOfFrame();
             //FadeOut();
             GetComponent<AudioSource>().Play();
@@ -107,6 +107,7 @@ public class SceneTransition8 : MonoBehaviour {
 
     public void FadeOut()
     {
+        animator2.SetTrigger("Lines_Transition_Fix");
         animator.SetTrigger("FadeIn");
     }
 }

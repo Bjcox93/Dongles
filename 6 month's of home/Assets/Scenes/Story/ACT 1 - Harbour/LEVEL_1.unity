@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465297, g: 0.4963597, b: 0.5747902, a: 1}
+  m_IndirectSpecularColor: {r: 0.44653052, g: 0.4963603, b: 0.57479155, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16286,6 +16286,7 @@ MonoBehaviour:
   BigLine4: {fileID: 1565913768}
   ParticalGrp: {fileID: 0}
   animator: {fileID: 378057954}
+  animator2: {fileID: 1270614152}
   EndLevel0: 0
 --- !u!114 &1173713592
 MonoBehaviour:
@@ -17773,6 +17774,29 @@ Transform:
   m_PrefabParentObject: {fileID: 4983261158251614, guid: e5be7d667de4bec4da33b187eb5f828c,
     type: 2}
   m_PrefabInternal: {fileID: 1270614149}
+--- !u!1 &1270614151 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1751733685705214, guid: e5be7d667de4bec4da33b187eb5f828c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1270614149}
+--- !u!95 &1270614152
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270614151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63bca7117b412484b86402de7af041ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1291513540 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4468287175498094, guid: a0b2e407c1419a245868955242415b46,
@@ -18341,6 +18365,7 @@ MonoBehaviour:
   target2: {fileID: 0}
   smoothSpeed: 10
   offSet: {x: 50, y: 2, z: 0}
+  PauseBlock: 0
 --- !u!114 &1331518818
 MonoBehaviour:
   m_ObjectHideFlags: 0
