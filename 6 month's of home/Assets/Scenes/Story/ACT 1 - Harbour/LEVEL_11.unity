@@ -9614,6 +9614,34 @@ Transform:
   m_Father: {fileID: 74448474}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &721200520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 721200521}
+  m_Layer: 0
+  m_Name: Null
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721200521
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721200520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.406733, y: -2.902188, z: -42.310246}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724488685
 GameObject:
   m_ObjectHideFlags: 0
@@ -10680,6 +10708,11 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114400229517954774, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: obstical1
+      value: 
+      objectReference: {fileID: 721200520}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_IsPrefabParent: 0
@@ -15992,7 +16025,7 @@ MonoBehaviour:
   BaseLine4: {fileID: 871437901}
   SmallLine4: {fileID: 1083463936}
   BigLine4: {fileID: 1565913768}
-  ParticalGrp: {fileID: 0}
+  ParticalGrp: {fileID: 721200520}
   animator: {fileID: 1422934907}
   animator2: {fileID: 680837161}
   EndLevel8: 0
@@ -20146,6 +20179,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: TutorialNotes
+      value: 
+      objectReference: {fileID: 721200520}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: press_b
+      value: 
+      objectReference: {fileID: 721200520}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: press_space
+      value: 
+      objectReference: {fileID: 721200520}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec943d4540abff54987f97dce325553f, type: 2}
   m_IsPrefabParent: 0

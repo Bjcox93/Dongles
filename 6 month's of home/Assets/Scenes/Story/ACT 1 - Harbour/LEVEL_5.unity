@@ -7310,7 +7310,7 @@ Prefab:
     - target: {fileID: 224799941227525340, guid: 0c23499e00e34d4498ba64df27a87715,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -1.1999512
+      value: -1.1998901
       objectReference: {fileID: 0}
     - target: {fileID: 224498412504311006, guid: 0c23499e00e34d4498ba64df27a87715,
         type: 2}
@@ -11559,6 +11559,11 @@ Prefab:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114400229517954774, guid: a0b2e407c1419a245868955242415b46,
+        type: 2}
+      propertyPath: obstical1
+      value: 
+      objectReference: {fileID: 1145080513}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0b2e407c1419a245868955242415b46, type: 2}
   m_IsPrefabParent: 0
@@ -17132,6 +17137,34 @@ Transform:
   m_Father: {fileID: 74448474}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1145080513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1145080514}
+  m_Layer: 0
+  m_Name: Null
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1145080514
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145080513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.406733, y: -2.902188, z: -42.310246}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1145117713
 GameObject:
   m_ObjectHideFlags: 0
@@ -17577,7 +17610,7 @@ MonoBehaviour:
   BaseLine4: {fileID: 931598067}
   SmallLine4: {fileID: 931598066}
   BigLine4: {fileID: 1625828637}
-  ParticalGrp: {fileID: 0}
+  ParticalGrp: {fileID: 1145080513}
   animator: {fileID: 1978507980}
   animator2: {fileID: 931598077}
   EndLevel4: 0
@@ -29192,6 +29225,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: TutorialNotes
+      value: 
+      objectReference: {fileID: 1145080513}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: press_b
+      value: 
+      objectReference: {fileID: 1145080513}
+    - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: press_space
+      value: 
+      objectReference: {fileID: 1145080513}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec943d4540abff54987f97dce325553f, type: 2}
   m_IsPrefabParent: 0

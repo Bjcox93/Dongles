@@ -76,7 +76,7 @@ public class SceneTransition3 : MonoBehaviour {
         //GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
         SceneManager.LoadScene("LEVEL_5");
-        Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+        //Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
         EndLevel3 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();

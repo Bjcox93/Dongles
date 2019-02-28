@@ -79,7 +79,7 @@ public class SceneTransition8 : MonoBehaviour {
         //GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
         SceneManager.LoadScene("Title_Menu");
-        Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
+        //Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
         EndLevel8 = true;
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
