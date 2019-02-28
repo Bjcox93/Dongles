@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using System;
 
 public class MainMenu1 : MonoBehaviour {
 
@@ -73,17 +74,24 @@ public class MainMenu1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Reset.instance.ScoreCanvas.SetActive(true);
-        StartNewWait = false;
-        OptionsBool = false;
-        ExitBool = false;
-        ContinueBool = false;
-        LerpStart = false;
-        LerpOptions = false;
-        LerpExit = false;
-        LerpContinue = false;
+        try{
+            Reset.instance.ScoreCanvas.SetActive(true);
+            StartNewWait = false;
+            OptionsBool = false;
+            ExitBool = false;
+            ContinueBool = false;
+            LerpStart = false;
+            LerpOptions = false;
+            LerpExit = false;
+            LerpContinue = false;
 
-        AudioSource = GetComponent<AudioSource>();
+            AudioSource = GetComponent<AudioSource>();
+        }
+
+         catch (Exception)
+        {
+            Debug.Log("Error Caught");
+        }
 
     }
 
