@@ -82,6 +82,7 @@ public class SceneTransition16 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+        AudioManager.instance.PlayLvl4Music();
         EndLevel16 = true;
     }
 

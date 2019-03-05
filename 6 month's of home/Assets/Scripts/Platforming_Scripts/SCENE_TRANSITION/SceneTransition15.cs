@@ -82,6 +82,7 @@ public class SceneTransition15 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+        AudioManager.instance.PlayLvl2Music();
     }
 
     private void OnTriggerEnter(Collider other)

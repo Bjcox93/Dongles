@@ -161,6 +161,7 @@ public class PauseMenu : MonoBehaviour {
         GameIsPaused = false;
         Debug.Log("menu");
         SceneManager.LoadScene("Title_Menu");
+        AudioManager.instance.PlayLvl10Music();
     }
 
     public void Resume()

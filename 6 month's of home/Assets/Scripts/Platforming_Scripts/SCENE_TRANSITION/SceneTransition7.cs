@@ -81,6 +81,7 @@ public class SceneTransition7 : MonoBehaviour {
         GameManager.instance.currentLevel = nextLevel;
         GameManager.instance.SaveGame();
         SceneManager.LoadScene(nextLevel);
+        AudioManager.instance.PlayLvl9Music();
     }
 
     private void OnTriggerEnter(Collider other)
