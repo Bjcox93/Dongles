@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4514311, g: 0.500732, b: 0.5713047, a: 1}
+  m_IndirectSpecularColor: {r: 0.45143157, g: 0.50073254, b: 0.5713059, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10445,6 +10445,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114972889386621066, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: TutorialObject
+      value: 
+      objectReference: {fileID: 672108952}
+    - target: {fileID: 223860544100478476, guid: ec943d4540abff54987f97dce325553f,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1331518815}
     - target: {fileID: 114960284820600416, guid: ec943d4540abff54987f97dce325553f,
         type: 2}
       propertyPath: TutorialNotes
@@ -10460,16 +10470,6 @@ Prefab:
       propertyPath: press_space
       value: 
       objectReference: {fileID: 1436449442}
-    - target: {fileID: 114972889386621066, guid: ec943d4540abff54987f97dce325553f,
-        type: 2}
-      propertyPath: TutorialObject
-      value: 
-      objectReference: {fileID: 672108952}
-    - target: {fileID: 223860544100478476, guid: ec943d4540abff54987f97dce325553f,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1331518815}
     - target: {fileID: 1649362400331084, guid: ec943d4540abff54987f97dce325553f, type: 2}
       propertyPath: m_Name
       value: Canvas 1
@@ -12611,8 +12611,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 672108953}
-  - {fileID: 1000537456}
   - {fileID: 864092989}
+  - {fileID: 1000537456}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -16215,7 +16215,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4983261158251614, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1787480238280772, guid: e5be7d667de4bec4da33b187eb5f828c, type: 2}
       propertyPath: m_Layer

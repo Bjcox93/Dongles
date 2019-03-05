@@ -7,6 +7,8 @@ using System;
 
 public class MainMenu1 : MonoBehaviour {
 
+    public static MainMenu1 instance = null;
+
     public GameObject StartNewGO;
     public Transform TargetStartNew_Start; 
     public Transform TargetStartNew_End;
@@ -55,6 +57,7 @@ public class MainMenu1 : MonoBehaviour {
     public bool LerpOptions;
     public bool LerpExit;
     public bool LerpContinue;
+    public bool audioJump1;
 
     public Animator animator;
 
@@ -74,7 +77,19 @@ public class MainMenu1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        try{
+        if (instance == null)
+
+            //if not, set instance to this
+            instance = this;
+
+        //If instance already exists and it's not this:
+        else if (instance != this)
+
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+            Destroy(gameObject);
+
+        try
+        {
             Reset.instance.ScoreCanvas.SetActive(true);
             StartNewWait = false;
             OptionsBool = false;
@@ -84,6 +99,7 @@ public class MainMenu1 : MonoBehaviour {
             LerpOptions = false;
             LerpExit = false;
             LerpContinue = false;
+            audioJump1 = false;
 
             AudioSource = GetComponent<AudioSource>();
         }
@@ -157,6 +173,7 @@ public class MainMenu1 : MonoBehaviour {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, progression);
             ButtonsStartNewGO.transform.position = Vector3.Lerp(ButtonStartNew_Start.transform.position, ButtonStartNew_End.transform.position, progression);
+            audioJump1 = true;
             yield return new WaitForEndOfFrame();
         }
         SceneManager.LoadScene("LEVEL_2");

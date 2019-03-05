@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour {
     public AudioMixer audioMixer;
     public static float musicVolume = 0.5f;
 
+    public float audioJump1f = 20f;
+
     public void MusicSetVolume (float volume)
     {
         audioMixer.SetFloat("Music_Vol", volume);
@@ -34,6 +36,13 @@ public class AudioManager : MonoBehaviour {
     {
         //Makes the volume of the Audio match the Slider value
         m_MyAudioSource.volume = musicVolume;
+
+       /* if (MainMenu1.instance.audioJump1 == true)
+        {
+            //Transition out of the main menu theme
+            audioJump1f = m_MyAudioSource.timeSamples;
+            
+        }*/
     }
 
 }

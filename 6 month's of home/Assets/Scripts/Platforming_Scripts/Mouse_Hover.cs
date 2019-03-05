@@ -65,7 +65,7 @@ public class Mouse_Hover : MonoBehaviour {
             else if (hit.transform.tag == "ContinueBlock")
             {
                 Debug.Log("ContinueBlockHit");
-                rend.material.color = Color.black;
+                rend.material.color = Color.gray;
                 rend2.material.color = Color.red;
                 rend4.material.color = Color.white;
                 rend5.material.color = Color.red;
@@ -81,7 +81,7 @@ public class Mouse_Hover : MonoBehaviour {
             else if (hit.transform.tag == "OptionsBlock")
             {
                 Debug.Log("OptionsBlockHit");
-                rend.material.color = Color.black;
+                rend.material.color = Color.gray;
                 rend2.material.color = Color.red;
                 rend3.material.color = Color.white;
                 rend5.material.color = Color.red;

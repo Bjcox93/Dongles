@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4513412, g: 0.5002874, b: 0.5694094, a: 1}
+  m_IndirectSpecularColor: {r: 0.45134145, g: 0.500288, b: 0.5694103, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -685,7 +685,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756643812}
   m_LocalRotation: {x: -0.0006975271, y: -0.0016605854, z: 0.09225589, w: 0.99573374}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1.0876461, y: 1.0875552, z: 1.0869862}
   m_Children:
   - {fileID: 1239600350}
@@ -694,7 +694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.062000003, y: -0.19700001, z: 10.587001}
   m_AnchorMin: {x: 0.4925, y: 0.044000003}
   m_AnchorMax: {x: 0.5975, y: 0.22779982}
-  m_AnchoredPosition: {x: 1177, y: 350}
+  m_AnchoredPosition: {x: 765, y: 282}
   m_SizeDelta: {x: 76, y: -45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756643814
@@ -1679,6 +1679,7 @@ MonoBehaviour:
   LerpOptions: 0
   LerpExit: 0
   LerpContinue: 0
+  audioJump1: 0
   animator: {fileID: 263521379}
   waitTime: 3
   buttonAnimationCurve:
@@ -1705,7 +1706,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  BigClick: {fileID: 8300000, guid: d96fad14104824c439c495c16df9e620, type: 3}
+  BigClick: {fileID: 8300000, guid: c25ffe80e00b9d942860a7d0bb143902, type: 3}
   AudioSource: {fileID: 1331518820}
 --- !u!114 &1162882164
 MonoBehaviour:
@@ -1765,7 +1766,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1226205751}
   m_LocalRotation: {x: 0.00029802322, y: 0.00144431, z: 0.39726996, w: 0.91770065}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1.0041139, y: 1.0041394, z: 0.9999805}
   m_Children:
   - {fileID: 1663592903}
@@ -1774,7 +1775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.034, y: 0.165, z: 46.815002}
   m_AnchorMin: {x: 0.48000002, y: 0.28980035}
   m_AnchorMax: {x: 0.65875, y: 0.49039993}
-  m_AnchoredPosition: {x: 661, y: 768}
+  m_AnchoredPosition: {x: 371, y: 496}
   m_SizeDelta: {x: 17, y: -52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226205753
@@ -2484,7 +2485,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979000618445290, guid: f4234558e00dff8438cffa89acc07000,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d96fad14104824c439c495c16df9e620, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c25ffe80e00b9d942860a7d0bb143902, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3377,7 +3378,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1762157455}
   m_LocalRotation: {x: 0.014358982, y: 0.006967902, z: 0.3291937, w: 0.94412756}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1.0039374, y: 1.0038153, z: 0.99992}
   m_Children:
   - {fileID: 740056182}
@@ -3386,7 +3387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 1.291, y: 1.296, z: 38.459003}
   m_AnchorMin: {x: 0.54125, y: 0.54800004}
   m_AnchorMax: {x: 0.65875, y: 0.9104}
-  m_AnchoredPosition: {x: -588, y: -649}
+  m_AnchoredPosition: {x: -262, y: -422}
   m_SizeDelta: {x: 66, y: -121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762157457
@@ -3744,7 +3745,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879912582}
   m_LocalRotation: {x: -0.020014646, y: -0.021294415, z: 0.6120768, w: 0.79025817}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 0.9818101, y: 1.7276857, z: 1.0622071}
   m_Children:
   - {fileID: 382583789}
@@ -3753,7 +3754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.319, y: -3.334, z: 75.527}
   m_AnchorMin: {x: 0.40750003, y: 0.51920027}
   m_AnchorMax: {x: 0.5, y: 0.8911998}
-  m_AnchoredPosition: {x: 243, y: 807}
+  m_AnchoredPosition: {x: 142, y: 458}
   m_SizeDelta: {x: 86, y: -131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879912584
