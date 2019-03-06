@@ -1200,12 +1200,12 @@ Prefab:
         type: 2}
       propertyPath: _AudioClip6
       value: 
-      objectReference: {fileID: 8300000, guid: eaa9d3015f7cb7d42bc31de90c0bfe99, type: 3}
+      objectReference: {fileID: 8300000, guid: 1595783025ab1774282b1d3ff3479cd9, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: _AudioClip7
       value: 
-      objectReference: {fileID: 8300000, guid: b6e01ad2c6df7a1449a60000ff058ff1, type: 3}
+      objectReference: {fileID: 8300000, guid: f2a38682815aef842a08169c8dd128bf, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: _AudioClip8
