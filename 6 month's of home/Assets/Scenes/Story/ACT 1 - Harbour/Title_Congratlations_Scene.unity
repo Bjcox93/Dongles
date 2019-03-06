@@ -1170,7 +1170,7 @@ Prefab:
         type: 2}
       propertyPath: _AudioClip1
       value: 
-      objectReference: {fileID: 8300000, guid: ec94c47bd05b5794097c38fedf026322, type: 3}
+      objectReference: {fileID: 8300000, guid: 91c749bab0048c248b898754b8212f3e, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: m_MyAudioSource
