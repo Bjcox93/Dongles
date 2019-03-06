@@ -1180,7 +1180,7 @@ Prefab:
         type: 2}
       propertyPath: _AudioClip2
       value: 
-      objectReference: {fileID: 8300000, guid: ba45fe0d576d0294cb34bfbf1546e2eb, type: 3}
+      objectReference: {fileID: 8300000, guid: 581bd8f8edd78134bae9e3a24053c1bf, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: _AudioClip3
