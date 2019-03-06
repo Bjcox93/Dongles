@@ -1170,7 +1170,7 @@ Prefab:
         type: 2}
       propertyPath: _AudioClip1
       value: 
-      objectReference: {fileID: 8300000, guid: 91c749bab0048c248b898754b8212f3e, type: 3}
+      objectReference: {fileID: 8300000, guid: 2740e09d33996834392136d4a4b675be, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: m_MyAudioSource
@@ -1180,12 +1180,12 @@ Prefab:
         type: 2}
       propertyPath: _AudioClip2
       value: 
-      objectReference: {fileID: 8300000, guid: 581bd8f8edd78134bae9e3a24053c1bf, type: 3}
+      objectReference: {fileID: 8300000, guid: 91c749bab0048c248b898754b8212f3e, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: _AudioClip3
       value: 
-      objectReference: {fileID: 8300000, guid: 2740e09d33996834392136d4a4b675be, type: 3}
+      objectReference: {fileID: 8300000, guid: 581bd8f8edd78134bae9e3a24053c1bf, type: 3}
     - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
         type: 2}
       propertyPath: _AudioClip5
