@@ -17042,47 +17042,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114270784149593900, guid: 7da42adf32a031347b6306a0f36dfb0e,
-        type: 2}
-      propertyPath: PlayerObject
-      value: 
-      objectReference: {fileID: 1866074807}
-    - target: {fileID: 114270784149593900, guid: 7da42adf32a031347b6306a0f36dfb0e,
-        type: 2}
-      propertyPath: Myrenderer
-      value: 
-      objectReference: {fileID: 1866074809}
-    - target: {fileID: 114270784149593900, guid: 7da42adf32a031347b6306a0f36dfb0e,
-        type: 2}
-      propertyPath: BlackMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 606cabc23a610874d889de487950b9fb, type: 2}
-    - target: {fileID: 114270784149593900, guid: 7da42adf32a031347b6306a0f36dfb0e,
-        type: 2}
-      propertyPath: WhiteMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 4c6ee84133e54794caf27cf88fdbeb8e, type: 2}
-    - target: {fileID: 23897431225231720, guid: 7da42adf32a031347b6306a0f36dfb0e,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1690332064485434, guid: 7da42adf32a031347b6306a0f36dfb0e, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1584409720788294, guid: 7da42adf32a031347b6306a0f36dfb0e, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1970308075120670, guid: 7da42adf32a031347b6306a0f36dfb0e, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1030734430768996, guid: 7da42adf32a031347b6306a0f36dfb0e, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7da42adf32a031347b6306a0f36dfb0e, type: 2}
   m_IsPrefabParent: 0
@@ -23663,16 +23622,6 @@ Transform:
   m_Father: {fileID: 74448474}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1866074807 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1690332064485434, guid: 7da42adf32a031347b6306a0f36dfb0e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1375985819}
---- !u!23 &1866074809 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 23897431225231720, guid: 7da42adf32a031347b6306a0f36dfb0e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1375985819}
 --- !u!1 &1867515147
 GameObject:
   m_ObjectHideFlags: 0
