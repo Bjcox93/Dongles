@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -53,19 +54,34 @@ public class Reset : MonoBehaviour {
         DontDestroyOnLoad(TutorialNotes);
         DontDestroyOnLoad(press_b);
         DontDestroyOnLoad(press_space);
-        
 
 
-        if (GameManager.instance.tutorialUI == true)
+        try
         {
-            press_b.SetActive(true);
-            press_space.SetActive(false);
+            if (GameManager.instance.tutorialUI == true)
+            {
+                press_b.SetActive(true);
+                press_space.SetActive(false);
+            }
         }
 
-        if (GameManager.instance.tutorialUI == false)
+        catch (Exception)
         {
-            press_space.SetActive(false);
-            press_b.SetActive(false);
+            Debug.Log("Caught");
+        }
+
+        try
+        {
+            if (GameManager.instance.tutorialUI == false)
+            {
+                press_space.SetActive(false);
+                press_b.SetActive(false);
+            }
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
         }
 
 
@@ -87,11 +103,19 @@ public class Reset : MonoBehaviour {
                 SceneManager.LoadScene(scene, LoadSceneMode.Single);
 
                 scoreAmount = scoreAmount + 1;
+                try
+                {
+                    //TutorialNotes
+                    GameManager.instance.tutorialBoolFalse();
+                    press_space.SetActive(false);
+                    press_b.SetActive(false);
+                }
 
-                //TutorialNotes
-                GameManager.instance.tutorialBoolFalse();
-                press_space.SetActive(false);
-                press_b.SetActive(false);
+                catch (Exception)
+                {
+                    Debug.Log("Caught");
+                }
+
             }
            
         }
