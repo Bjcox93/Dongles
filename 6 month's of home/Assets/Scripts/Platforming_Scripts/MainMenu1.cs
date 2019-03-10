@@ -173,7 +173,15 @@ public class MainMenu1 : MonoBehaviour {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
             StartNewGO.transform.position = Vector3.Lerp(TargetStartNew_Start.transform.position, TargetStartNew_End.transform.position, progression);
             ButtonsStartNewGO.transform.position = Vector3.Lerp(ButtonStartNew_Start.transform.position, ButtonStartNew_End.transform.position, progression);
-            AudioManager.instance.PlayLvl1Music();
+            try
+            {
+                AudioManager.instance.PlayLvl1Music();
+            }
+
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
             yield return new WaitForEndOfFrame();
         }
         SceneManager.LoadScene("LEVEL_2");

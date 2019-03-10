@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -79,10 +80,18 @@ public class SceneTransition16 : MonoBehaviour {
         SceneManager.LoadScene("LEVEL_8");
         //Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
         EndLevel16 = true;
-        GameManager.instance.currentLevel = nextLevel;
-        GameManager.instance.SaveGame();
-        SceneManager.LoadScene(nextLevel);
-        AudioManager.instance.PlayLvl4Music();
+        try
+        {
+            GameManager.instance.currentLevel = nextLevel;
+            GameManager.instance.SaveGame();
+            SceneManager.LoadScene(nextLevel);
+            AudioManager.instance.PlayLvl4Music();
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
         EndLevel16 = true;
     }
 

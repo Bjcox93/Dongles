@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -77,10 +78,35 @@ public class SceneTransition1 : MonoBehaviour {
         SceneManager.LoadScene("LEVEL_7");
         EndLevel1 = true;
         //Debug.LogError(SceneManager.GetSceneByName(nextLevel).buildIndex);
-        GameManager.instance.currentLevel = nextLevel;
-        GameManager.instance.SaveGame();
+        try
+        {
+            GameManager.instance.currentLevel = nextLevel;
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
+
+        try
+        {
+            GameManager.instance.SaveGame();
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
         SceneManager.LoadScene(nextLevel);
-        AudioManager.instance.PlayLvl11Music();
+        try
+        {
+            AudioManager.instance.PlayLvl11Music();
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
     }
 
     private void OnTriggerEnter(Collider other)

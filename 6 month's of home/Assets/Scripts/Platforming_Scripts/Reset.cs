@@ -119,13 +119,21 @@ public class Reset : MonoBehaviour {
             }
            
         }
-
-        //TutorialNotesCont
-        if (Input.GetMouseButtonDown(0) && GameManager.instance.tutorialUI == true)
+        try
         {
-            press_b.SetActive(false);
-            press_space.SetActive(true);
+            //TutorialNotesCont
+            if (Input.GetMouseButtonDown(0) && GameManager.instance.tutorialUI == true)
+            {
+                press_b.SetActive(false);
+                press_space.SetActive(true);
+            }
         }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
+
 
     }
 
