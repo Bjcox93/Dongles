@@ -1679,7 +1679,6 @@ MonoBehaviour:
   LerpOptions: 0
   LerpExit: 0
   LerpContinue: 0
-  audioJump1: 0
   animator: {fileID: 263521379}
   waitTime: 3
   buttonAnimationCurve:
@@ -2881,7 +2880,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
