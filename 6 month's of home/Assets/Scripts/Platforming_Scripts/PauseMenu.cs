@@ -126,6 +126,7 @@ public class PauseMenu : MonoBehaviour {
 
     IEnumerator WaitForResumeButton()
     {
+        AudioSource.PlayOneShot(BigClick, Audio_On_Collision.sfxVolume);
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
             float progression = buttonAnimationCurve.Evaluate(t / waitTime);
