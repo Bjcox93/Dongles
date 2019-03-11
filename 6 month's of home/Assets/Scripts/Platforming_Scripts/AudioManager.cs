@@ -27,6 +27,10 @@ public class AudioManager : MonoBehaviour {
     public AudioClip _AudioClip11; //Level 11
     //public AudioClip _AudioClip2;
 
+    //Audio Snapshots
+    public AudioMixerSnapshot HighHertz;
+    public AudioMixerSnapshot LowHertz;
+
     public void MusicSetVolume (float volume)
     {
         audioMixer.SetFloat("Music_Vol", volume);
@@ -63,6 +67,18 @@ public class AudioManager : MonoBehaviour {
         //Makes the volume of the Audio match the Slider value
         m_MyAudioSource.volume = musicVolume;
     }
+
+    public void LowpassLowHertz()
+    {
+        LowHertz.TransitionTo(.01f);
+    }
+
+    public void LowpassHighHertz()
+    {
+        HighHertz.TransitionTo(.01f);
+    }
+
+
     public void PlayLvl1Music()
     {
         m_MyAudioSource.clip = _AudioClip1;

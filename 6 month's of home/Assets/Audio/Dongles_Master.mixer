@@ -10,6 +10,8 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 245087033906466110}
+  - {fileID: 245303448543498782}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -26,7 +28,7 @@ AudioMixerController:
     - 94b8b187cc6e0ec478cbd37fe9a0b877
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: 245303448543498782}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -42,6 +44,7 @@ AudioMixerGroupController:
   m_Pitch: 2c793720d6883f14fa0c663944eb3b47
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: 244402241008277724}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -67,7 +70,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 3661422675db02e4898a9aac58cb2bb1
-  m_FloatValues: {}
+  m_FloatValues:
+    3cbe82ec8776e304384b470d0a6f12af: 22000
   m_TransitionOverrides: {}
 --- !u!243 &243175992349783574
 AudioMixerGroupController:
@@ -103,6 +107,21 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &244402241008277724
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2c35fdd0020d669498f23a79a16e1e49
+  m_EffectName: Lowpass Simple
+  m_MixLevel: 1e907ce729e48a84e9201fd6eb007c34
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 3cbe82ec8776e304384b470d0a6f12af
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244559446482404984
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -129,3 +148,25 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &245087033906466110
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LowPassHighHertz
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 1862ce8a709b89045b9c3ce7d08926e9
+  m_FloatValues:
+    3cbe82ec8776e304384b470d0a6f12af: 22000
+  m_TransitionOverrides: {}
+--- !u!245 &245303448543498782
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LowPassLowHertz
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 3c91fa572c02c864e9d5065b3e19160c
+  m_FloatValues:
+    3cbe82ec8776e304384b470d0a6f12af: 10
+  m_TransitionOverrides: {}
