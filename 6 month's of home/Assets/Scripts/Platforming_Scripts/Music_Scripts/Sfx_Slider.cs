@@ -15,8 +15,8 @@ public class Sfx_Slider : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        sfxSlider.value = Audio_On_Collision.sfxVolume;
+    }
 	
 	// Update is called once per frame
 	void Update () {

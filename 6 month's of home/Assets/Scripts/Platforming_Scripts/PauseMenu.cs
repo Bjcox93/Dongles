@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -47,6 +48,10 @@ public class PauseMenu : MonoBehaviour {
     public bool LerpResume;
     public bool LerpMenu;
 
+    //Slider Objects
+    public Slider sfxSlider;
+    public Slider musicSlider;
+
 
     //Coroutine Stuff:
     public float waitTime = 3;
@@ -61,10 +66,15 @@ public class PauseMenu : MonoBehaviour {
         LerpMenu = false;
         LerpResume = false;
         AudioSource = GetComponent<AudioSource>();
+        musicSlider.value = AudioManager.musicVolume;
+        sfxSlider.value = Audio_On_Collision.sfxVolume;
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+        
+
         if (Input.GetKeyDown(KeyCode.Escape) && CameraMovemement.instance.PauseBlock == false)
         {
             if (GameIsPaused)

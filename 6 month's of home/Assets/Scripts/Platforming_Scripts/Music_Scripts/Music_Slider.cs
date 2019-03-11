@@ -15,8 +15,8 @@ public class Music_Slider : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        musicSlider.value = AudioManager.musicVolume;
+    }
 	
 	// Update is called once per frame
 	void Update () {

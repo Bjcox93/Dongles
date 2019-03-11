@@ -50,7 +50,7 @@ public class SpeedOfObject : MonoBehaviour {
                 if (timeF < 0)
                 {
                     Debug.Log("Hot");
-                    Reset.instance.ResetFun();
+                   // Reset.instance.ResetFun();
                     timeF = 30.0f;
                 }
             }

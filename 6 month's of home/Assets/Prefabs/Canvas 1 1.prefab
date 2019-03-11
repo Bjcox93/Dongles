@@ -3275,6 +3275,8 @@ MonoBehaviour:
   LerpContinue: 0
   LerpResume: 0
   LerpMenu: 0
+  sfxSlider: {fileID: 114668120740662600}
+  musicSlider: {fileID: 114660305855837760}
   waitTime: 3
   buttonAnimationCurve:
     serializedVersion: 2
