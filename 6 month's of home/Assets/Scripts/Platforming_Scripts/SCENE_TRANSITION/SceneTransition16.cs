@@ -60,7 +60,14 @@ public class SceneTransition16 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
-            AudioManager.instance.LowpassLowHertz();
+            try
+            {
+                AudioManager.instance.LowpassLowHertz();
+            }
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
             FadeOut();
             Pendulum2.instance.GetBigger();
             
@@ -72,7 +79,14 @@ public class SceneTransition16 : MonoBehaviour {
             //BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
             yield return new WaitForEndOfFrame();
             GetComponent<AudioSource>().Play();
-            AudioManager.instance.LowpassHighHertz();
+            try
+            {
+                AudioManager.instance.LowpassHighHertz();
+            }
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
         }
 
         EndLevel16 = true;

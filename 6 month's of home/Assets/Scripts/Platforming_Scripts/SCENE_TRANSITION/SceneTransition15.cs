@@ -63,7 +63,14 @@ public class SceneTransition15 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
-            AudioManager.instance.LowpassLowHertz();
+            try
+            {
+                AudioManager.instance.LowpassLowHertz();
+            }
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
             FadeOut();
             Pendulum2.instance.GetBigger();
             //ParticalGrp.SetActive(true);
@@ -74,7 +81,14 @@ public class SceneTransition15 : MonoBehaviour {
             //BaseLine4.transform.position = Vector3.Lerp(SmallLine4.transform.position, BigLine4.transform.position, progression);
             yield return new WaitForEndOfFrame();
             GetComponent<AudioSource>().Play();
-            AudioManager.instance.LowpassHighHertz();
+            try
+            {
+                AudioManager.instance.LowpassHighHertz();
+            }
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
         }
 
         //GetComponent<AudioSource>().Play();
