@@ -11441,10 +11441,6 @@ MonoBehaviour:
   ParticalGrp: {fileID: 1309690125}
   animator: {fileID: 726260746}
   animator2: {fileID: 1014615903}
-  HighHertz: 5000
-  LowHertz: 0
-  CurrentHertz: 0
-  lowPassFilter: {fileID: 0}
   EndLevel1: 0
 --- !u!136 &1173713593
 CapsuleCollider:
@@ -12719,7 +12715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: c8a112b26085cfe4b8364660cca2afdb, type: 2}
+  profile: {fileID: 11400000, guid: a38a5c75ef03aa1419ae8ed6affca77a, type: 2}
 --- !u!82 &1331518824
 AudioSource:
   m_ObjectHideFlags: 0
