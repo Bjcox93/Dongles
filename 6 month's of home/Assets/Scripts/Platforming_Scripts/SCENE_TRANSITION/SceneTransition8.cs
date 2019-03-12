@@ -63,7 +63,7 @@ public class SceneTransition8 : MonoBehaviour {
     {
         for (float t = 0; t < waitTime; t += Time.unscaledDeltaTime)
         {
-            AudioManager.instance.LowpassLowHertz();
+            //AudioManager.instance.LowpassLowHertz();
             FadeOut();
             Pendulum2.instance.GetBigger();
             //ParticalGrp.SetActive(true);
