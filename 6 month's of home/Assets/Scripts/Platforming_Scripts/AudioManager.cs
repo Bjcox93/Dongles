@@ -31,6 +31,10 @@ public class AudioManager : MonoBehaviour {
     public AudioMixerSnapshot HighHertz;
     public AudioMixerSnapshot LowHertz;
 
+    //Audio Bools
+    public bool HighSnapshot;
+    public bool LowSnapshot;
+
     public void MusicSetVolume (float volume)
     {
         audioMixer.SetFloat("Music_Vol", volume);
@@ -66,16 +70,30 @@ public class AudioManager : MonoBehaviour {
     {
         //Makes the volume of the Audio match the Slider value
         m_MyAudioSource.volume = musicVolume;
+
+        if (HighSnapshot == true)
+        {
+            HighHertz.TransitionTo(2f);
+        }
+
+        if (LowSnapshot == true)
+        {
+            LowHertz.TransitionTo(0.4f);
+        }
     }
 
     public void LowpassLowHertz()
     {
-        LowHertz.TransitionTo(.01f);
+        //LowHertz.TransitionTo(.01f);
+        HighSnapshot = false;
+        LowSnapshot = true;
     }
 
     public void LowpassHighHertz()
     {
-        HighHertz.TransitionTo(.01f);
+        //HighHertz.TransitionTo(.01f);
+        HighSnapshot = true;
+        LowSnapshot = false;
     }
 
 

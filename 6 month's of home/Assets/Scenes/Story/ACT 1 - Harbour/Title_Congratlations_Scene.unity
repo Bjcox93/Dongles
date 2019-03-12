@@ -362,6 +362,8 @@ MonoBehaviour:
   LerpContinue: 0
   LerpResume: 0
   LerpMenu: 0
+  sfxSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
   waitTime: 3
   buttonAnimationCurve:
     serializedVersion: 2
@@ -1231,6 +1233,18 @@ Prefab:
       propertyPath: _AudioClip11
       value: 
       objectReference: {fileID: 8300000, guid: 8ea8e4f3680bbb84788c5e8c34646949, type: 3}
+    - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
+        type: 2}
+      propertyPath: HighHertz
+      value: 
+      objectReference: {fileID: 245087033906466110, guid: f4234558e00dff8438cffa89acc07000,
+        type: 2}
+    - target: {fileID: 114288818161708264, guid: c00b89a1c825cc24387ed09a5ea3693d,
+        type: 2}
+      propertyPath: LowHertz
+      value: 
+      objectReference: {fileID: 245303448543498782, guid: f4234558e00dff8438cffa89acc07000,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c00b89a1c825cc24387ed09a5ea3693d, type: 2}
   m_IsPrefabParent: 0

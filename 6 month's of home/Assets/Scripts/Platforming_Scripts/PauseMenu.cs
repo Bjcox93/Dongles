@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -62,12 +63,20 @@ public class PauseMenu : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        LerpContinue = false;
-        LerpMenu = false;
-        LerpResume = false;
-        AudioSource = GetComponent<AudioSource>();
-        musicSlider.value = AudioManager.musicVolume;
-        sfxSlider.value = Audio_On_Collision.sfxVolume;
+        try
+        {
+            LerpContinue = false;
+            LerpMenu = false;
+            LerpResume = false;
+            AudioSource = GetComponent<AudioSource>();
+            musicSlider.value = AudioManager.musicVolume;
+            sfxSlider.value = Audio_On_Collision.sfxVolume;
+        }
+
+        catch (Exception)
+        {
+            Debug.Log("Caught");
+        }
     }
 	
 	// Update is called once per frame
