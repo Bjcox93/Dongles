@@ -24,7 +24,7 @@ public class Audio_On_Collision : MonoBehaviour {
     public AudioClip Boop;    // Add your Audi Clip Here;
                               // This Will Configure the  AudioSource Component; 
                               // MAke Sure You added AudioSouce to death Zone;
-    public static float sfxVolume = 0.5f;
+    public static float sfxVolume = 0.7f;
 
     //----------------------------------------------------------------------------
     //ScreenShake;
