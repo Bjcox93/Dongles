@@ -62,7 +62,7 @@ public class SceneTransition16 : MonoBehaviour {
         {
             try
             {
-                AudioManager.instance.LowpassLowHertz();
+               // AudioManager.instance.LowpassLowHertz();
             }
             catch (Exception)
             {
