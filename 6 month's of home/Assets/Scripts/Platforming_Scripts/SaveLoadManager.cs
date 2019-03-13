@@ -12,14 +12,21 @@ public static class SaveLoadManager{
 	{
 		using (FileStream stream = new FileStream(filename, FileMode.Create))
 		{
-			BinaryFormatter bf = new BinaryFormatter();
+            try
+            {
+                BinaryFormatter bf = new BinaryFormatter();
 
-			Debug.Log(Application.persistentDataPath);
-			Debug.Log(GameManager.instance.currentLevel);
-			GameData data = new GameData(GameManager.instance.currentLevel);
+                Debug.Log(Application.persistentDataPath);
+                Debug.Log(GameManager.instance.currentLevel);
+                GameData data = new GameData(GameManager.instance.currentLevel);
 
-			bf.Serialize(stream, data);
-		}
+                bf.Serialize(stream, data);
+            }
+            catch (Exception)
+            {
+                Debug.Log("Caught");
+            }
+        }
 	}
 
 	public static string LoadFile()
